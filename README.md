@@ -17,7 +17,7 @@ Please note that segmentation is a memory intensive operation. It is suggested, 
 ## Required software and data
 You should have these software install these on your laptops before coming to workshop.
 
-1.	Please download the latest preview version (v4.11 series) from https://download.slicer.org, and install the SlicerMorph application. 
+1.	Please download the latest preview version (v4.11 series) from https://download.slicer.org, and install the SlicerMorph extension from the extension catalogue [using the Extension Manager](https://www.slicer.org/wiki/Documentation/4.10/SlicerApplication/ExtensionsManager). 
 2. Alternatively, you can install the a precustomized version of 3D Slicer with all the tools we need pre-loaded. Please download it for your OS from http://download.slicermorph.org and follow the instructions in the pdf file.
 
 **Accounts:** Please obtain an account on these websites prior to workshop
