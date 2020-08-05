@@ -6,19 +6,18 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 **Computer specs:** Please bring a laptop with these suggested specs:
 *	A quad-core CPU from last couple years (i7 or i5 is preferred). 
 *	1920x1080 or higher screen resolution.
-*	8GB or higher RAM (memory)
+*	8GB or more RAM (memory)
 *	100-200GB available storage space (for software and data). Please note that solid state drives (SSD) both SATA and non-volatile memory express (NVMe) are preferred over spinning hard-drive disks (HDD) due their high sequential read/write performance (usually 10X or more faster than HDDs). 
-*	 A discrete (not an integrated one) GPU with minimum of 2GB of RAM with the latest GPU driver installed.  
+*	 A discrete (not an integrated one) GPU with minimum of 2GB of RAM with the latest GPU driver installed. (This is not a must, but a recommendation)  
 *	A three-buttoned mouse. 
 
-Your laptop should be running windows 10 (windows 7 has issues and is not supported anymore), or Mac OS 10.11 (El Capitan) or later.  A recent version of a common Linux distribution (like Ubuntu or CentOS) is also fine.
-Please note that segmentation is a memory intensive operation. It is suggested, you have 6-10X more memory than your full dataset size (i.e., if you are working on a 1024x1024x1024 dataset, you will need about 10GB RAM to work on in in Slicer). You can always reduce your dataset to match your hardware capacity.
+Your laptop should be running windows 10 (windows 7 has issues and is not supported anymore), or Mac OS High Sierra (10.13) or later.  A recent version of a common Linux distribution (like Ubuntu 18.04, CentOS 7 or later) is also fine.
+Please note that segmentation is a memory intensive operation. It is suggested, you have 6-10X more memory than your full dataset size (i.e., if you are working on a 1024x1024x1024 dataset, you will need about 10GB RAM to work on in Slicer). You can always reduce your dataset to match your hardware capacity.
 
-## Required software and data
-You should have these software install these on your laptops before coming to workshop.
-
-1.	Please download the latest preview version (v4.11 series) from https://download.slicer.org, and install the SlicerMorph extension from the extension catalogue [using the Extension Manager](https://www.slicer.org/wiki/Documentation/4.10/SlicerApplication/ExtensionsManager). 
-2. Alternatively, you can install the a precustomized version of 3D Slicer with all the tools we need pre-loaded. Please download it for your OS from http://download.slicermorph.org and follow the instructions in the pdf file.
+## Required software
+Please participate in one of the tech check-ins scheduled for 
+1. August 11th, 11-12p (Pacific Daylight Time)
+2. August 13th, 10-11 (Pacific Daylight Time) 
 
 **Accounts:** Please obtain an account on these websites prior to workshop
 *	MorphoSource: https://morphosource.org
@@ -27,7 +26,7 @@ You should have these software install these on your laptops before coming to wo
 
 **Important Websites:**
 
-*	SlicerMorph project website: https://SlicerMorph.github.io
+*	SlicerMorph project website: https://www.SlicerMorph.org
 
 #### Funding acknowledgement
 Development of SlicerMorph and the intense workshops are generously funded by National Science Foundation Advances in Bioinformatics collobrative research grants to Murat Maga (ABI-1759883), Adam Summers (ABI-1759637) and Doug Boyer (ABI-1759839). 
