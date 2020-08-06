@@ -23,6 +23,7 @@ Please participate in one of the tech check-ins scheduled for
 *	MorphoSource: https://morphosource.org
 *	Slicer Forum, https://discourse.slicer.org (alternatively you can use your github or google accounts to signup)
 *	Please sign up for the SlicerMorph announcement to keep up-to-date with SlicerMorph project and extension updates http://mailman11.u.washington.edu/mailman/listinfo/slicermorph-announcements
+* Auto3Dgm uses a commercial optimization library called mosek. [Please follow their instructions (Step #5 and later) on acquring a free academic or a trial license (if you haven't got an academic affiliation) prior to Day 4.](https://toothandclaw.github.io/installations/)
 
 **Important Websites:**
 
