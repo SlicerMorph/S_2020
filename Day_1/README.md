@@ -20,6 +20,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 ### Loading Data and Saving (SlicerMorph Specific Functionalities)
 * [ImageStacks](https://github.com/SlicerMorph/W_2020/tree/master/Lab02_Slicer_2_Data_Import#import-non-dicom-image-sequences-using-imagestacks-module)
+* [SkyScanReconImport]('TBC')
 *	[DCM2NIIX (for DICOM import and anonymization)](https://github.com/rordenlab/dcm2niix)
 * ExportAs
 *	MorphoSourceImport 
