@@ -6,19 +6,23 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 **GETTING STARTED WITH SLICER & SLICERMORPH**
 
+
 *	Navigating UI
-* Extension catalogue
-* Data Module and Subject Hierarchy, 
-*	Sample Data module, loading data
-*	Volumes
-*	ImageStacks 
-*	MorphoSourceImport 
+* Extension Manager and Catalogue
+* Loading Data and Saving (Slicer's Default way) 
 *	Models 
-*	DCM2NIIX (for DICOM import and anonymization)
 * DICOMBrowser (for clinical data and implications)
+*	DCM2NIIX (for DICOM import and anonymization)
+* Volumes 
+
+###	Loading Data and Saving (SlicerMorph Specific Functionalities)
+* ImageStacks
+* ExportAs
+*	MorphoSourceImport 
+
+### More useful modules 
 *	CropVolume
 *	Transforms
 *	Customization (Application Settings)
-*	Saving data vs Export As
 * Data Backup strategies
 
