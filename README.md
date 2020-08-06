@@ -28,6 +28,7 @@ Please participate in one of the tech check-ins scheduled for
 **Important Websites:**
 
 *	SlicerMorph project website: https://www.SlicerMorph.org
+* Link to the Sample Datasets for the workshop: https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m
 
 #### Funding acknowledgement
 Development of SlicerMorph and the intense workshops are generously funded by National Science Foundation Advances in Bioinformatics collobrative research grants to Murat Maga (ABI-1759883), Adam Summers (ABI-1759637) and Doug Boyer (ABI-1759839). 
