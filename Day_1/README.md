@@ -16,11 +16,11 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * [Data Module and Subject Hierarchy explained](https://slicer.readthedocs.io/en/latest/user_guide/modules/data.html)
 *	[Models](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Models') 
 * [DICOMBrowser (for clinical data and implications)](https://discourse.slicer.org/t/new-dicom-browser-is-ready/8819)
-*	[DCM2NIIX (for DICOM import and anonymization)](https://github.com/rordenlab/dcm2niix)
 * [Volumes](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Volumes) 
 
 ### Loading Data and Saving (SlicerMorph Specific Functionalities)
-* ImageStacks
+* [ImageStacks](https://github.com/SlicerMorph/W_2020/tree/master/Lab02_Slicer_2_Data_Import#import-non-dicom-image-sequences-using-imagestacks-module)
+*	[DCM2NIIX (for DICOM import and anonymization)](https://github.com/rordenlab/dcm2niix)
 * ExportAs
 *	MorphoSourceImport 
 
