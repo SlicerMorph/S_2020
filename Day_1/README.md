@@ -22,7 +22,6 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * [SkyScanReconImport](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ImageStacks/ImageStacks.md#skyscanreconimport)
 * [ExportAs](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ExportAs/ExportAs.md)
 *	[MorphoSourceImport](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/MorphoSourceImport/MorphoSourceImport.md)
-*	[DCM2NIIX (for DICOM import and anonymization)](https://github.com/rordenlab/dcm2niix)
 
 ### [DICOM Issue](Day_1/DICOM.md)
 
