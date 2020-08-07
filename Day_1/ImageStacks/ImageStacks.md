@@ -25,19 +25,21 @@ This is a standard problem of using image stacks to convey geometric information
 
 <img src="ImageStacks2.png">
 
-This is a common problem across 3D visualization programs, when image sequences are used to present 3D data. Because of this, it is very important to have independent confirmation of correct import procedure. Look for asymmetrical structures on the specimen and confirm that they appear on the correct side in the 3D rendering. After a successful import (correct specimen size, orientation) you should immediately save your data in a proper 3D volume format that will retain this information. 
+This is a common problem across 3D visualization programs, when image sequences are used to present 3D data. Because of this, it is very important to have independent confirmation of correct import procedure. Look for asymmetrical structures on your specimen and confirm that they appear on the correct side in the 3D rendering. After a successful import (correct specimen size, orientation) you should immediately save your data in a proper 3D volume format that will retain this information (which will be our next topic). 
 
 ### Further exploration
 
-Use the other options of the `ImageStacks` and see how you can subset your data (hint, just choose a portion of the sequence, not all files), downsample and skip slices. 
+1. Use the other options of the `ImageStacks` and see how you can subset your data (hint, just choose a portion of the sequence, not all files), downsample and skip slices. 
+2. Go to the Morphosource website and download a microCT image stack of a specimen that you would like to work on the rest of the course. Use the `ImageStacks` tool to import the dataset into SlicerMorph. Note that some of the datasets in MorphoSource are many gigabytes when imported (pay attention to estimated memory usage reported by the tool). In such case, explore the data at low resolution using the downsample option as you may run into memory issues if you do not have sufficient RAM on your computer.
 
 ## SkyscanReconImport
-Note that reversing corrected the mirroring issue, specimen is not correctly oriented in anatomical space (e.g., Inferior is marked as the front of the specimen). Again this goes back to the issue of microCT scanners do not have a strict anatomical coordinate convention. With a trial and error you can find the right transformation necessary to put the specimen into the correct space. We have calculated that for our Bruker/Skyscan microCT and provide another module called `SkyScanReconImport` for the Skyscan users. 
+Note that while **reverse** corrected the mirroring issue, specimen is not correctly oriented in anatomical space (e.g., Inferior is marked as the front of the specimen). Again this goes back to the issue of microCT scanners not having coordinate convention. With a trial and error you can find the right transformation necessary to put the specimen into the correct space for your particular scanner. We have calculated that for our Bruker/Skyscan microCT and provide another module called `SkyScanReconImport` for the Skyscan users. 
 
-To use this tool, find the `SkyScanReconImport` and simply point out the file browser to the scanner log (**left_side_damaged__rec.log**) provided in the folder. The module read the correct image spacing, and the filename prefix provided in the log and automatically populate these fields, so no additional user intervention is required. 
+To use this tool, find the `SkyScanReconImport` and simply point out the file browser to the scanner log (**left_side_damaged__rec.log**) provided in the folder. Module will read the correct image spacing, filename prefix provided in the log and automatically populate these fields, so no additional user intervention is required. 
 
 When you enable the Volume Rendering as described above, you see that the anatomical orientation labels correctly line up with the specimen. 
 
 <img src="SkyscanReconImport.png">
 
 **NOTE** For this transformation to hold, the specimen should be oriented in the scanner bed such that the anterior of the specimen should be closest to the scanner, and operator should be looking down to the dorsal (top) surface (see the specimen picture above). We only tested this with Bruker 1076. So if you are Bruker users, we appreciate if you can provide further feedback about whether this tools works for you. 
+
