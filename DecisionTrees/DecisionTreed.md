@@ -7,7 +7,12 @@ We provide some decision trees for common tasks that new users want to accomplis
 
 ### 3D Visualization
 
+<img src="3DVisualization.png">
+
 ### Data Cleanup (segmentation)
+
+<img src="DataCleanup.png">
 
 ### Landmarking
 
+<img src="Landmarking.png">
