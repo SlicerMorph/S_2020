@@ -25,7 +25,11 @@ This is a standard problem of using image stacks to convey geometric information
 
 <img src="ImageStacks2.png">
 
-This is a common problem across 3D visualization programs, when image sequences are used to present 3D data. THat's why we don't like them, and would prefer to keep our data in proper 3D formats that retain critical information such as orientation of axes, image spacing and others. In fact, saving the data in NRRD format right after a successful import is what we suggest. 
+This is a common problem across 3D visualization programs, when image sequences are used to present 3D data. Because of this, it is very important to have independent confirmation of correct import procedure. Look for asymmetrical structures on the specimen and confirm that they appear on the correct side in the 3D rendering. After a successful import (correct specimen size, orientation) you should immediately save your data in a proper 3D volume format that will retain this information. 
+
+### Further exploration
+
+Use the other options of the `ImageStacks` and see how you can subset your data (hint, just choose a portion of the sequence, not all files), downsample and skip slices. 
 
 ## SkyscanReconImport
 Note that reversing corrected the mirroring issue, specimen is not correctly oriented in anatomical space (e.g., Inferior is marked as the front of the specimen). Again this goes back to the issue of microCT scanners do not have a strict anatomical coordinate convention. With a trial and error you can find the right transformation necessary to put the specimen into the correct space. We have calculated that for our Bruker/Skyscan microCT and provide another module called `SkyScanReconImport` for the Skyscan users. 
