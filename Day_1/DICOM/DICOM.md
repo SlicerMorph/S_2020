@@ -9,6 +9,6 @@ Slicer has an extensive support for DICOM format through the [`DICOMBrowser` mod
 
 Because of these reasons, we actually suggest SlicerMorph users to use an external DICOM converter, which will take a DICOM series, strip the metadata and save it in a Slicer compatible NRRD (or NIFTI) format. The tool is called [DCM2NIIX](https://github.com/rordenlab/dcm2niix/releases), and is available as a command line tool for Windows, MacOS and Linux. Because it is a command line tool, it can be used to do bulk conversion of many datasets too. There is also a Slicer extension (DCM2NIIXGUI), which is bundled with SlicerMorph, but it is as almost easy to use the command line tool. 
 
-We provide one small [sample DICOM](https://seattlechildrens1.app.box.com/file/702035236045) from The Cancer Imaging Archive. After you unzip the contents on if, you can import this sequence through the DICOMBrowser, by clicking on **Import DICOM files** and navigating to the folder **04-29-2011-ThoraxAThoraxRoutine Adult-66805**. To load the DICOM series into Slicer, click "Examine" and the "Load" button. 
+We provide one small [sample DICOM](https://seattlechildrens1.app.box.com/file/702035236045) from The Cancer Imaging Archive. After you unzip the contents of it, you can import this sequence through the DICOMBrowser, by clicking on **Import DICOM files** and navigating to the folder **04-29-2011-ThoraxAThoraxRoutine Adult-66805**. To load the DICOM series into Slicer, click "Examine" and the "Load" button. 
 
 <img src="DICOM.png">
