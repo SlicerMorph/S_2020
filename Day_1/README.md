@@ -14,16 +14,17 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * [Extension Manager and Catalogue](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html#extensions)
 * [Loading Data and Saving (Slicer's Default way)](https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html)
 * [Data Module and Subject Hierarchy explained](https://slicer.readthedocs.io/en/latest/user_guide/modules/data.html)
-*	[Models](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Models') 
-* [DICOMBrowser (for clinical data and implications)](https://discourse.slicer.org/t/new-dicom-browser-is-ready/8819)
+*	[Models](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Models) 
 * [Volumes](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Volumes) 
 
 ### Loading Data and Saving (SlicerMorph Specific Functionalities)
 * [ImageStacks](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ImageStacks/ImageStacks.md)
 * [SkyScanReconImport](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ImageStacks/ImageStacks.md#skyscanreconimport)
-*	[DCM2NIIX (for DICOM import and anonymization)](https://github.com/rordenlab/dcm2niix)
 * [ExportAs](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ExportAs/ExportAs.md)
 *	[MorphoSourceImport](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/MorphoSourceImport/MorphoSourceImport.md)
+*	[DCM2NIIX (for DICOM import and anonymization)](https://github.com/rordenlab/dcm2niix)
+
+### [DICOM Issue](Day_1/DICOM.md)
 
 ### More useful modules 
 *	[CropVolume](https://www.slicer.org/wiki/Documentation/Nightly/Modules/CropVolume)
