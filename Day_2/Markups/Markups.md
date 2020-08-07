@@ -33,15 +33,15 @@ To be added
   * Place mode allows to place one object then switches modes back to Transform mode. Fiducial is the default object.
   * If there is no active Markup node, one will be created with the first placement. Curve points and fiducials will be added to the active Markup node, if one exists. 
   * Place mode can be made persistent by clicking the checkbox in the mouse mode toolbar.
-<img src=".FiducialPersistence.png">
+<img src="./FiducialPersistence.png">
 
 ### Markup Management
 Fiducial points and anchor points of lines, curves, and angles can be accessed and manipulated using the `Markups` module. 
-<img src="./images/markupsModule1.png">
+<img src="./markupsModule1.png">
 * In the Create menu, a new node Markups node can be created for fiducials, lines, angles, and curves.
 * In the Display menu, set the visibility, opacity, glyph and text size of a markup node. Expand the Advanced tab for additional options.
 * In the Control Points menu, use the table to adjust visibility, labels, and position of individual fiducials or anchor points
-<img src="./images/markupsModule2.png">
+<img src="./markupsModule2.png">
 
 ### Example 1: Using Markups for Measurement
 In this example, we will place a closed curve on one slice of a CT scan, measure the area of the curve, and visualize the region. For more detail and discussion, see the Slicer discourse thread [here](https://discourse.slicer.org/t/how-can-i-calculate-an-area-on-a-ct-image-i-can-calculate-volumes-mm-3-but-not-areas-mm-2/1549/7).
