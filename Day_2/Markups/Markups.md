@@ -30,6 +30,7 @@ By default, curve fitting is done using Spline function. Other alternatives are:
 Click two points to define a line, for the 3rd point move perpendicular to the line defined by the line and you should see a rectangular plane appearing. Once you place the plane, you can adjust its angle, size, rotation etc, by enabling the **Visible** option in the **Display->Interaction** section of the `Markups` module. If the interaction widget appear too small to be useful, use the **Glyph Size** to make it bigger (or smaller). 
 
 <img src="./MarkupTypes.png" width="300"/>
+
 -----
 
 ### Markup Placement
@@ -43,17 +44,30 @@ Click two points to define a line, for the 3rd point move perpendicular to the l
 
 ----
 
-### Markup Management
-Fiducial points and anchor points of lines, curves, and angles can be accessed and manipulated using the `Markups` module. 
-<img src="./markupsModule1.png" width="500px"/>
-* In the **Create menu**, a new node Markups node can be created for fiducials, lines, angles, and curves.
-* In the **Display** menu, set the visibility, opacity, glyph and text size of a markup node. Expand the **Advanced** tab for additional options.
-* In the Control Points menu, use the table to adjust visibility, labels, and position of individual fiducials or anchor points
-<img src="./markupsModule2.png" width="500px"/>
+## Markup Management and Important Considerations for Data Collections
+Fiducial points and control (anchor) points of lines, curves, angles and planes can be accessed and manipulated using the `Markups` module. 
+<img src="./markupsModule1.png" width="800px"/>
+* In the **Create menu**, a new  Markups node can be created for fiducials, lines, angles, curves and Planes. 
+
+* **Note** that the icon to create a new MarkupFiducial node is unfortunately very similar to the MarkupFiducial placement icon in the mouse controls on the top bar. These two buttons serve different purposes. You should be using the placement icon to record your individual landmarks that below to the same set (e.g., LMs belonging to skull). You should use the button to create new MarkupFiducial node to create nodes for different sets (e.g., Skull_LMs, Mandible_LMs, etc). Basically any set of landmarks that you will analyze indepedently should have its own MarkupFiducial node.   
+
+* In the **Display** menu, you can set the visibility, opacity, glyph and text size of a markup node. Once you find an optimal glyph size for our screen resolution, you can hit the **Save to Defaults** button, and Slicer would remember these settings in your future sessions. You can click to **Reset to Defaults** to go back to the Slicer's default size. Expand and explore the **Advanced** tab for additional options. 
+
+* In the **Control Points** menu, use the table to adjust visibility, labels, and position of individual fiducials points. Because there is no undo for markups actions, when you are actively landmarking, we suggest setting the lock icon so that you don't accidentally grab an already placed LM and modify it.
+
+* You can use **Click to Jump Slicess** option to see where the fiducial is in slice views. This is a very useful feature, if you are landmarking directly on the 3D volume (e.g., a CT scan) as oppose to a 3D model. 
+
+* You can copy/paste/delete control points across fiducial nodes by highlighting the rows (use ctrl to select multiple rows), as if in a regular spreadsheet.
+
+* Expand the **Advanced** section of the **Control Points** section and explore how you can move highlighted control points up or down in the list. You will find this feature useful when you miss a landmark in the sequence, and place it later. Like most other GMM programs, SlicerMorph's GPA module assumes that all samples are landmarked in the same order. Further down you can use Name Format field to modify the fiducial labels in bulk. Current convention of %N-%d means that landmarks are named by the node name (e.g., MarkupsFiducial) followed by the (-) sign and the number indicating the sequence they are landmarked. If you want a shorted label, you can just switch to %d and hit apply to rename the existing ones. The subsequent fiducials will follow this format.
+
+* In short, `Markups` module of Slicer is very powerful, but has a lot of options. Make sure to explore them in depth to avoid frustration later on. 
+
+<img src="./markupsModule2.png" width="600px"/>
 
 ----
 
-## Visualization: Displaying 3D Model Data
+## 3D Models and Curve-based Semi Landmarking
 3D Models (also called Mesh) data in Slicer is displayed using the `Models` Module, as we have seen in Day 1. Fiducial points are automatically placed on the surface of the a loaded mesh and will be constrained to the surface when they are moved. The control points for other markups are also constrained to mesh surfaces when present. You can of course peel off the control points from the surfaces if you move them far enough, but otherwise they will glide on the surface of the model. 
 
 ### Resampling a curve on the surface of a model to create Semi Landmarks
