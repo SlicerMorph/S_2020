@@ -53,6 +53,8 @@ A closer examination of the module's main menu reveals that there are two main t
 
 Now that we are acquainted with the overall layout of the module, let's start by looking at two example meshes. We can start by importing them using Slicer's data loading capabilities. Please click the `Data load` button, then navigate to the tutorial data folder, and load the following two meshes:
 
+[You can get the zip archive of the sample data used in this tutorial from here.](https://app.box.com/s/vt4e7x59fxydjdp16evs4x9o4o31mhbe). 
+
 * `A_J_.ply`: A/J inbred mice are widely used to model cancer and for carcinogen testing given their high susceptibility to carcinogen-induced tumors.
 * `NOD_SHILTJ_.ply`: NOD/ShiLtJ inbred mice are widely used as a polygenic model for autoimmune type 1 diabetes.
 
