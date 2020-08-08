@@ -53,11 +53,11 @@ Fiducial points and control (anchor) points of lines, curves, angles and planes 
 
 * In the **Display** menu, you can set the visibility, opacity, glyph and text size of a markup node. Once you find an optimal glyph size for our screen resolution, you can hit the **Save to Defaults** button, and Slicer would remember these settings in your future sessions. You can click to **Reset to Defaults** to go back to the Slicer's default size. Expand and explore the **Advanced** tab for additional options. 
 
-<img src="MarkupModule1.png" width="600px"/>
+<img src="markupsModule1.png" width="600px"/>
 
 * For MarkupsPlane, you can adjust its placement, size, rotation etc, by enabling the **Visible** option in the **Display->Interaction** section of the `Markups` module. If the interaction widget appear too small to be useful, use the **Glyph Size** to make it bigger (or smaller). 
 
-<img src="MarkupModule2.png" width="600px"/>
+<img src="markupsModule2.png" width="600px"/>
 
 * In the **Control Points** menu, use the table to adjust visibility, labels, and position of individual fiducials points. Because there is no undo for markups actions, when you are actively landmarking, we suggest setting the lock icon so that you don't accidentally grab an already placed LM and modify it.
 
@@ -69,7 +69,7 @@ Fiducial points and control (anchor) points of lines, curves, angles and planes 
 
 * In short, `Markups` module of Slicer is very powerful, but has a lot of options. Make sure to explore them in depth to avoid frustration later on. 
 
-<img src="MarkupModule3.png" width="600px"/>
+<img src="MarkupsModule3.png" width="600px"/>
 
 ----
 
