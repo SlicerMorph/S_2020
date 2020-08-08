@@ -27,7 +27,7 @@ Sequentially place points. A curve will be fit to the points and updated as addi
 By default, curve fitting is done using Spline function. Other alternatives are: Linear, Polynomial, or Shortest-distance on a surface. Curve Type function can be adjusted under **Curve Settings** section of the `Markups` module.  
 
 **Planes:**
-Click two points to define a line, for the 3rd point move perpendicular to the line defined by the line and you should see a rectangular plane appearing. Once you place the plane, you can adjust its angle, size, rotation etc, by enabling the **Visible** option in the **Display->Interaction** section of the `Markups` module. If the interaction widget appear too small to be useful, use the **Glyph Size** to make it bigger (or smaller). 
+Click two points to define a line, for the 3rd point move perpendicular to the line defined by the line and you should see a rectangular plane appearing. 
 
 <img src="./MarkupTypes.png" width="300"/>
 
@@ -53,6 +53,12 @@ Fiducial points and control (anchor) points of lines, curves, angles and planes 
 
 * In the **Display** menu, you can set the visibility, opacity, glyph and text size of a markup node. Once you find an optimal glyph size for our screen resolution, you can hit the **Save to Defaults** button, and Slicer would remember these settings in your future sessions. You can click to **Reset to Defaults** to go back to the Slicer's default size. Expand and explore the **Advanced** tab for additional options. 
 
+<img src="MarkupModule1.png" width="600px"/>
+
+* For MarkupsPlane, you can adjust its placement, size, rotation etc, by enabling the **Visible** option in the **Display->Interaction** section of the `Markups` module. If the interaction widget appear too small to be useful, use the **Glyph Size** to make it bigger (or smaller). 
+
+<img src="MarkupModule2.png" width="600px"/>
+
 * In the **Control Points** menu, use the table to adjust visibility, labels, and position of individual fiducials points. Because there is no undo for markups actions, when you are actively landmarking, we suggest setting the lock icon so that you don't accidentally grab an already placed LM and modify it.
 
 * You can use **Click to Jump Slicess** option to see where the fiducial is in slice views. This is a very useful feature, if you are landmarking directly on the 3D volume (e.g., a CT scan) as oppose to a 3D model. 
@@ -63,7 +69,7 @@ Fiducial points and control (anchor) points of lines, curves, angles and planes 
 
 * In short, `Markups` module of Slicer is very powerful, but has a lot of options. Make sure to explore them in depth to avoid frustration later on. 
 
-<img src="./markupsModule2.png" width="600px"/>
+<img src="MarkupModule3.png" width="600px"/>
 
 ----
 
