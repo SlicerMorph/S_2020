@@ -6,8 +6,6 @@
 
 * Updates to Markups module are ongoing so check back for updates
 ### Markup Types
-**ROI:**
-Place two points sequentially that specify corners of a rectangular cube defining the region of interest. The size and shape of the rectangle can be adjusted after placement.
 
 **Fiducials:**
 Place a single landmark point.
@@ -15,16 +13,21 @@ Place a single landmark point.
 **Lines:**
 Sequentially place two points, creating a line between them.
 
+**ROI:**
+Place two points sequentially that specify corners of a rectangular cube defining the region of interest. The size and shape of the rectangle can be adjusted after placement.
+
 **Angles:**
 Place three points sequentially. This forms two vectors where the second point placed is the vertex. The angle beween the two vectors is displayed.
 
 **Open and closed curves:**
-Sequentially place points. A curve will be fit to the points and updated as additional points are added. If the closed curve is selected, the first and last points placed will be connected.
+Sequentially place points. A curve will be fit to the points and updated as additional points are added. If the closed curve is selected, the first and last points placed will be connected. 
+
+By default, curve fitting is done using Spline function. Other alternatives are: Linear, Polynomial, or Shortest-distance on a surface. Curve Type function can be adjusted under **Curve Settings** section of the `Markups` module.  
 
 **Planes:**
-To be added
+Click two points to define a line, for the 3rd point move perpendicular to the line defined by the line and you should see a rectangular plane appearing. Once you place the plane, you can adjust its angle, size, rotation etc, by enabling the **Visible** option in the **Display->Interaction** section of the `Markups` module. If the interaction widget appear too small to be useful, use the **Glyph Size** to make it bigger (or smaller). 
 
-<img src="./MarkupTypes.png">
+<img src="./MarkupTypes.png" width="300"/>
 
 ### Markup Placement
   * Slicer has two mouse modes: Transform, and Place. 
@@ -37,11 +40,11 @@ To be added
 
 ### Markup Management
 Fiducial points and anchor points of lines, curves, and angles can be accessed and manipulated using the `Markups` module. 
-<img src="./markupsModule1.png">
-* In the Create menu, a new node Markups node can be created for fiducials, lines, angles, and curves.
-* In the Display menu, set the visibility, opacity, glyph and text size of a markup node. Expand the Advanced tab for additional options.
+<img src="./markupsModule1.png" width="400px"/>
+* In the **Create menu**, a new node Markups node can be created for fiducials, lines, angles, and curves.
+* In the **Display** menu, set the visibility, opacity, glyph and text size of a markup node. Expand the **Advanced** tab for additional options.
 * In the Control Points menu, use the table to adjust visibility, labels, and position of individual fiducials or anchor points
-<img src="./markupsModule2.png">
+<img src="./markupsModule2.png" width="400px"/>
 
 ### Example 1: Using Markups for Measurement
 In this example, we will place a closed curve on one slice of a CT scan, measure the area of the curve, and visualize the region. For more detail and discussion, see the Slicer discourse thread [here](https://discourse.slicer.org/t/how-can-i-calculate-an-area-on-a-ct-image-i-can-calculate-volumes-mm-3-but-not-areas-mm-2/1549/7).

@@ -6,17 +6,15 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 **3D VISUALIZATION**
 
--	Volume Rendering
--	Lighting
--	Animations
--	Measurements
-  - Landmarks
-  - Lines
-  - Angles
-  - Planes
-  - Curves (open and closed)
+-	[Volume Rendering](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/VolumeRendering/VolumeRendering.md)
+-	[Lighting]()
+-	[Animator]()
+
+**COLLECTING MEASUREMENTS**
+
+-	[Markups](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/Markups/Markups.md)
 - Review of Markups module and its function
-- Calculating Cross-sectional area from arbitrary curves.
+- Cross-sectional area of 3D models using curves.
 
 **SEGMENTATION**
 
