@@ -23,3 +23,40 @@ Download the sample data called [MorphoSource-Frog-Models.zip](https://app.box.c
 -   Now go to `Models` module, and adjust the colors of the different models so that they are more easily distinguished in 3D view, and explore the diffent sections indicated above (information, visibility, material etc )
 
 <img src="./Models_Expanded.png" width="800px"/>
+
+
+## Loading Texture and Working with Internet Data
+
+SketchFab is a commerical website that you can find some interesting life-sciences data. Go ahead and [download this mastodon tooth in OBJ format](https://sketchfab.com/3d-models/vertebrate-mastodon-premolar-pri-064cdd8eead040f589a12621369aa770). If you do not have an account with SketchFab, you can download the same file zip file from [here.](https://app.box.com/s/ha1ctox0uav7xrz0q86el9m1d7fxj6yi)
+
+-   Open a new instance of Slicer, or empty the scene (CTRL+W, note that this will remove all data loaded into Slicer without a reminder to save files. So use it at your own risk.)
+-   Unzip the contents to a folder
+-   Drag and drop 
+    -   **PRI_MastodonTooth.obj** (3D Model)
+    -   **PRI_MastodonTooth.jpg** (texture map)
+-   Accept default, and notice that texture map is not loaded.
+-   Search for `TextureModel` module in the module search bar, and switch to the module
+-   Choose the model and texture options (there will only one of each), and hit APPLY
+-   The model will now render with the texture information
+
+### Issues with Data on internet
+Click the little pin that brings the 3D viewer options. From there, 
+
+-   Choose Orthographic projection (highlighted)
+-   Enable Ruler in 3D.
+
+Orthographic projection preserve distances so that same measurement taken in any orientation will report equal distances. Slicer's default is **Perspective** rendering, which results in more realistic looking 3D rendering, since the voxels further away from the camera is rendered smaller. 
+
+If you are collecting data for  morphometrics, our suggestion is to use **Orthographic** rendering. Any easy way to tell which projection you are using is to see if you can enable the ruler. Ruler works only with **Orthographic** projection. 
+
+So what's going on with this mastodon tooth, it is only few mms long, yet [mastodons' are huge](https://media.wired.com/photos/59328be3f682204f736969cb/master/w_660,c_limit/american-mastodon.jpg).
+
+Congratulations you made your first acquantaince of many issues STL format has. For example, there is no explicit unit description embedded in STL. Most likely, whatever software this STL is generated from, it has been using a default unit different than Slicer's (which is mm). For example, cm to mm would cause 10X reduction in size. [THere are many other issues](). 
+
+**STL format is a historical relic and should not be used for scientific research and particularly for data retention**. Please refrain from exporting your data into STL. OBJ (or PLY) is a more suitable alternative. 
+
+<img src="./Mastodon.img">
+
+
+
+
