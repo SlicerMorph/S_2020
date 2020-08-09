@@ -23,7 +23,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * [ExportAs](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ExportAs/ExportAs.md)
 *	[MorphoSourceImport](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/MorphoSourceImport/MorphoSourceImport.md)
 
-### [DICOM Issue](Day_1/DICOM.md)
+### [DICOM Issue](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/DICOM/DICOM.md)
 
 ### More useful modules 
 *	[CropVolume](https://www.slicer.org/wiki/Documentation/Nightly/Modules/CropVolume)
