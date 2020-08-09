@@ -51,7 +51,7 @@ If you are collecting data for  morphometrics, our suggestion is to use **Orthog
 
 So what's going on with this mastodon tooth, it is only few mms long, yet [mastodons' are huge](https://media.wired.com/photos/59328be3f682204f736969cb/master/w_660,c_limit/american-mastodon.jpg).
 
-Congratulations you made your first acquantaince of many issues STL format has. For example, there is no explicit unit description embedded in STL. Most likely, whatever software this STL is generated from, it has been using a default unit different than Slicer's (which is mm). For example, cm to mm would cause 10X reduction in size. [THere are many other issues](). 
+Congratulations you made your first acquantaince of many issues STL format has. For example, there is no explicit unit description embedded in STL. Most likely, whatever software this STL is generated from, it has been using a default unit different than Slicer's (which is mm). For example, cm to mm would cause 10X reduction in size. [THere are many other issues](). For teaching purposes data like this is fine, however if your goal is doing morphometrics you should be very careful about using processed data like this for your research. 
 
 **STL format is a historical relic and should not be used for scientific research and particularly for data retention**. Please refrain from exporting your data into STL. OBJ (or PLY) is a more suitable alternative. 
 
