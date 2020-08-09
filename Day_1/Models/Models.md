@@ -39,6 +39,8 @@ SketchFab is a commerical website that you can find some interesting life-scienc
 -   Choose the model and texture options (there will only one of each), and hit APPLY
 -   The model will now render with the texture information
 
+<img src="./Mastodon.png">
+
 ### Issues with Data on internet
 Click the little pin that brings the 3D viewer options. From there, 
 
@@ -47,15 +49,13 @@ Click the little pin that brings the 3D viewer options. From there,
 
 Orthographic projection preserve distances so that same measurement taken in any orientation will report equal distances. Slicer's default is **Perspective** rendering, which results in more realistic looking 3D rendering, since the voxels further away from the camera is rendered smaller. 
 
-If you are collecting data for  morphometrics, our suggestion is to use **Orthographic** rendering. Any easy way to tell which projection you are using is to see if you can enable the ruler. Ruler works only with **Orthographic** projection. 
+If you are collecting data for  morphometrics, our suggestion is to use **Orthographic** rendering. An easy way to tell which projection you are using is to see if you can enable the ruler. Ruler works only with **Orthographic** projection (it is meaningless to show a ruler if distances are not preserved). 
 
 So what's going on with this mastodon tooth, it is only few mms long, yet [mastodons' are huge](https://media.wired.com/photos/59328be3f682204f736969cb/master/w_660,c_limit/american-mastodon.jpg).
 
-Congratulations you made your first acquantaince of many issues STL format has. For example, there is no explicit unit description embedded in STL. Most likely, whatever software this STL is generated from, it has been using a default unit different than Slicer's (which is mm). For example, cm to mm would cause 10X reduction in size. [THere are many other issues](). For teaching purposes data like this is fine, however if your goal is doing morphometrics you should be very careful about using processed data like this for your research. 
+Congratulations you made your first acquantaince of many issues 3D model formats has. In this case, I suspect whatever software this model is generated from, it has been using a default unit different than Slicer's (which is mm). For example, cm to mm would cause 10X reduction in size, but unfortunately without external reference we can't be sure. [THere are many other issues](https://discourse.slicer.org/t/beware-of-the-stl-file-format/7642/3?u=muratmaga). For teaching purposes data like this is fine, however if your goal is doing morphometrics you should be very careful about including processed data like this for your research. 
 
-**STL format is a historical relic and should not be used for scientific research and particularly for data retention**. Please refrain from exporting your data into STL. OBJ (or PLY) is a more suitable alternative. 
 
-<img src="./Mastodon.img">
 
 
 
