@@ -22,7 +22,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 *	Calculating model to model distance and heatmaps.
 *	Flatting curved structures 
 *	Importing raw data
-*	Finding support and using forum 
+
 
 
 
