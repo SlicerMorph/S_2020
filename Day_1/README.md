@@ -14,10 +14,8 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * [Extension Manager and Catalogue](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html#extensions)
 * [Loading Data and Saving (Slicer's Default way)](https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html)
 * [Data Module and Subject Hierarchy explained](https://slicer.readthedocs.io/en/latest/user_guide/modules/data.html)
-*	[Models](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Models) 
-* [Volumes](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Volumes) 
 
-### Loading Data and Saving (SlicerMorph Specific Functionalities)
+### SlicerMorph Specific Functionalities for Loading Data and Saving 
 * [ImageStacks](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ImageStacks/ImageStacks.md)
 * [SkyScanReconImport](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ImageStacks/ImageStacks.md#skyscanreconimport)
 * [ExportAs](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/ExportAs/ExportAs.md)
@@ -26,7 +24,8 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 ### [DICOM Issue](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/DICOM/DICOM.md)
 
 ### More useful modules 
-*	[CropVolume](https://www.slicer.org/wiki/Documentation/Nightly/Modules/CropVolume)
+*	[Models]((https://github.com/SlicerMorph/S_2020/blob/master/Day_1/Models/Models.md) 
+*	[SampleData-Volumes-CropVolume](https://www.slicer.org/wiki/Documentation/Nightly/Modules/CropVolume)
 *	[Transforms](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Transforms)
 *	[Customizing the Slicer Application (Application Settings)](https://slicer.readthedocs.io/en/latest/user_guide/settings.html)
 * [SlicerMorph Specific customization suggestions](https://seattlechildrens1.app.box.com/v/SliceMorphDownloads/file/572062269652)

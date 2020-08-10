@@ -53,7 +53,7 @@ If you are collecting data for  morphometrics, our suggestion is to use **Orthog
 
 So what's going on with this mastodon tooth, it is only few mms long, yet [mastodons' are huge](https://media.wired.com/photos/59328be3f682204f736969cb/master/w_660,c_limit/american-mastodon.jpg).
 
-Congratulations you made your first acquantaince of many issues 3D model formats has. In this case, I suspect whatever software this model is generated from, it has been using a default unit different than Slicer's (which is mm). For example, cm to mm would cause 10X reduction in size, but unfortunately without external reference we can't be sure. [THere are many other issues](https://discourse.slicer.org/t/beware-of-the-stl-file-format/7642/3?u=muratmaga). For teaching purposes data like this is fine, however if your goal is doing morphometrics you should be very careful about including processed data like this for your research. 
+Congratulations you made your first acquantaince of many issues 3D model formats has. In this case, I suspect whatever software this model is generated from, it has been using a default unit different than Slicer's (which is mm). For example, cm to mm would cause 10X reduction in size, but unfortunately without external reference we can't be sure. [There are many other concerns using common 3D model formats, which tend to be lossy in terms information content such as no explicit unit definition, or coordinate system assumptions.](https://discourse.slicer.org/t/beware-of-the-stl-file-format/7642/3?u=muratmaga). For teaching purposes data like this is fine, however if your goal is doing morphometrics you should be very careful about including processed data like this for your research. 
 
 
 

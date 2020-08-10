@@ -19,6 +19,10 @@ Please participate in one of the tech check-ins scheduled for
 1. August 11th, 11-12p (Pacific Daylight Time)
 2. August 13th, 10-11 (Pacific Daylight Time) 
 
+Go to https://download.slicer.org and download the latest preview (**not the stable 4.10**) for your OS, and install it. On Mac, after the install if the security policies does not allow you to run Slicer, you can override them following [these instructions](https://discourse.slicer.org/t/unsigned-application-issue-on-mac/12930/2). For the similar issue on Windows 10, you can click on 'More Info' button, and then choose 'Install anyways'.
+
+
+
 **Accounts:** Please obtain an account on these websites prior to workshop
 *	MorphoSource: https://morphosource.org
 *	Slicer Forum, https://discourse.slicer.org (alternatively you can use your github or google accounts to signup)
