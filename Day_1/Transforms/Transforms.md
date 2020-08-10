@@ -5,7 +5,7 @@ We will be using the `Transform` module mostly to manually align a volume or a m
 
 Let's look at the basic of the `Transform` module:
 
-1. Go to Data Module, and load a 3D model. For this tutorial, I am using the Gorilla skull in the SlicerMorph `Sample Data` module but you can use any 3D model you like.
+1. Go to `Data` Module, and load a 3D model. For this tutorial, I am using the Gorilla skull in the SlicerMorph `Sample Data` module but you can use any 3D model you like.
 2. Make sure you are in the **Subject Hierarchy** tab of the `Data` module
 3. Right-click on your 3D model node and choose **Clone**. This will create a copy of your existing model.
 4. Adjust the colors of these models by clicking on the color square such that they are easily distinguished.
@@ -25,19 +25,25 @@ Let's look at the basic of the `Transform` module:
 
 12. Switch to the `Transform`module.
     -   Observe the identity transform (Diagonal entries set to 1, everything else is 0). In the transform matrix, the diagonal specify the scaling value, and the fourth column indicates the translation (aka offset) in the 3D space.
-    -   
+    -   Enter the shown values below to the first three diagonals and see how it scales each axes indepedently.
+    -   Move the translation sliders and see that the fourth column values change accordingly.
+    -   Play with the rotation sliders. 
 
+<img src="Transforms3.png">
 
 ### On your own
 Import the sample microCT stack (or load the NRRD, if you already saved it) into a blank scene. Switch to the `Transforms` module 
   -   Put the volume under a blank transform and try using the rotation sliders to change the slice views. Explore other options of the transform module. See that if you remove the 3D volume out of the transformation, slice views go back to original orientation
   -   In a blank scene (remember CTRL + W to unload all data), import the sample stack again. Switch to `CropVolume` and create a new ROI that covers the extend of the data, then go to `Transforms` module and assign the new ROI tho this transform node. Use sliders to rotate the ROI approximately 45 degrees (in any plane is fine). Now go back to `Crop Volume` and do a cropping. What happened?
   
-### Final Note
-If you want to save your transform node and keep it in that orientation, go to `Data` modules **Transform Hierarchy** section, right click the transform and choose **Harden Transform**, then use `ExportAs` to save your transformed model. 
+### Hardening the transforms
+* You can use the `ExportAs` module to save your resultant transformation. By default Slicer uses HDF5 format (.h5), but alternatively you can save it as a matlab transform (.mat). 
+* If you want to save your transformed node and keep it in that orientation, first go to `Data` module's **Transform Hierarchy** section, right-click the transform and choose **Harden Transform**, then use `ExportAs` to save your transformed model into a new file. 
 
 
-###Visualizing Transforms
+### Visualizing the transforms and other advanced features
+[Please refer to the `Transforms` module documentation](https://www.slicer.org/wiki/Documentation/Nightly/Modules/Transforms) for more advanced features of the module. 
+
 <Figure>
 <img src="https://www.slicer.org/w/img_auth.php/a/a8/Grid2d.png" width="200px">
 <figcaption>Visualization of a grid transform in 2D.</figcaption>
@@ -46,6 +52,3 @@ If you want to save your transform node and keep it in that orientation, go to `
 </Figure>
 
 More information here()
-
-### On your own
-Try importing re-importing the image stack from the `ImageStacks` tutorial, and then use ExportAs to save it as in the NRRD format. After the export, close the scene (CTRL+W) and load the NRRD file by draggind and dropping it into Slicer main window. Likewise, go through the `MorphoSourceImport` tutorial and save one of the 3D models you have downloaded into PLY format. 
