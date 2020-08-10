@@ -9,7 +9,7 @@ We will review three Slicer modules that you will use frequently in this course:
 ### Sample Data
 1. Go to File->Download Sample Data and review the shown datasets. First 15 datasets are bundled with Slicer and second part is available only after you install the SlicerMorph extension. 
 
-<img src="SampleData.png", width="600px"/>
+<img src="SampleData.png" width="600px"/>
 
 2. Scroll down to SlicerMorph section, and click **sample_Skyscan_mCT_reconstruction.zip**. For the 1st time you use it, this file will be downloaded from internet to the Slicer's **Cache** folder. (If you don't know where that is, you can check it by going to Edit->Application Settings->Cache). Note that this is the same dataset we used in the `ImageStacks` tutorial. 
 
@@ -34,3 +34,6 @@ We will review three Slicer modules that you will use frequently in this course:
 <img src="Volumes3.png" width="500px"/>
 
 **IMPORTANT** If you have more than one volume loaded into your scene, the info given for the "Active Volume" may not be the volume have been looking at in slice views. Get into the habit of setting the slice view visibility of any volume by using the little eye icon in `Data` module. 
+
+### Crop Volume
+
