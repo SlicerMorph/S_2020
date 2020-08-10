@@ -46,6 +46,8 @@ Regardless of whether you are only interested in a small subset of your volume, 
 
 <img src = "CropVolume2.png">
 
+More detail about [`CropVolume` can be found here.](https://www.slicer.org/wiki/Documentation/Nightly/Modules/CropVolume)
+
 ### IMPORTANT TECHNICAL NOTES
 
 **Anisotropic data** If you are working with anisotropic voxels (i.e., different image spacing along different axes), you may want to enable **isotropic** option so that the resultant volume has isotropic spacing. Isotropic voxel alleviates some of the issues you may encounter with `Segment Editor` with anisotropic datasets. Images produced by medical CT scanners tend to have anisotropic spacing (usually Z axis is of lower resolution than X and Y) 
