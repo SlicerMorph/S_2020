@@ -224,6 +224,19 @@ Here's a video from the **SlicerMorph** team showing just how quick and easy it 
 </p>
 
 
+## Cutting down segmentation time
+
+If segmentation is your primary tasks, we suggest:
+* Getting a really good 3 button mouse.
+* Using a large (27" or larger), with 4K resolution. 
+* Learning the keyboard shortcuts (for example move slices up and down through f and b) for segment editor. 
+* You can program special keyboard shortcuts to each effect. Currently 1-10 are assigned to switch between first 10 effects. For SlicerMorph we find cycling through the effects clockwise (`` ` ``) and counter clockwise (`` ~ ``) fashion with repeated keystrokes to be a faster option. This is provided as part of the special [customization and startup script for SlicerMorph] (https://seattlechildrens1.app.box.com/file/551897685788). 
+* Consider investing in a digitizer tablet. You can assign specific functions to your digitizer pen (e.g., erase effect to the back tip of the pen) as well as the buttons on the tablet itself. 
+
+ 
+
+
+
 ## I have a 3D model, can I edit/segment that in Slicer?
 Yes you can. Use SlicerMorph's `ImportSurfaceToSegment` module and point out to a STL/PLY/VTK/OBJ file. This will create a labelmap representation of the 3D model and a single segment, which you can edit in `Segment Editor`. 
 
@@ -233,3 +246,5 @@ Yes you can. Use SlicerMorph's `ImportSurfaceToSegment` module and point out to 
 * [Endocast creation](https://slicermorph.github.io/Endocast_creation.html)
 * [Segmenting oblique slices](https://lassoan.github.io/SlicerSegmentationRecipes/ObliqueSliceSegmentation/)
 * Bonus pointer to [discussion on Segmentation to Finite Element Analysis](https://discourse.slicer.org/t/use-segmentations-in-cad-or-fem-software/1626) 
+*	Customizing .slicerrc.py for shortcuts and keystrokes
+

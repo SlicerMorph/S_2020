@@ -21,7 +21,7 @@ Even if you have previous experience with other 3D segmentation programs, it mig
 <img src="DataTypes.png">
 
 
-### Additional Resource for Image Segmentation in Slicer
+### Additional Resources for Image Segmentation in Slicer
 * [Documentation for `Segment Editor` module](https://slicer.readthedocs.io/en/latest/user_guide/modules/segmenteditor.html)
 * [Documentation for `Segmentations` module](https://slicer.readthedocs.io/en/latest/user_guide/modules/segmentations.html)
 * [Perk lab at the Queens University develops most of the segmentation tools present in Slicer. They have an extensive video library on segmentation related tasks on youtube:](https://www.youtube.com/user/PerkLabResearch)
@@ -29,18 +29,8 @@ Even if you have previous experience with other 3D segmentation programs, it mig
 
 ### Next steps
 
-Please go through [our Segmentation tutorial]{}. 
+Please go through [our Segmentation tutorial](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/Segmentation/Segmentation_Tutorial.md). 
 
-We specifically use a very small dataset (MRHead) to demonstrate some of the key functionality. Keep in mind some of the segmentation operations may require many times the size of your volume and can be potentially slow on large datasets. When you are working on your own dataset, don't be tempted to work on full resolution first. It is likely that you will do lots of retakes, you really don't want to slow yourself. Once you have a good idea of how you would tackle different segmentation tasks with combining different tools, then it will be time to work with full resolution data.
+We specifically use a very small datasets to demonstrate some of the key functionality. Keep in mind some of the segmentation operations may require many times the size of your volume and can be potentially slow on large datasets. When you are working on your own dataset, don't be tempted to work on full resolution first. It is likely that you will do lots of retakes, you really don't want to slow yourself. Once you have a good idea of how you would tackle different segmentation tasks with combining different tools, then it will be time to work with full resolution data.
 
 **THERE IS LIMITED UNDO** Segment Editor undos only a few number of steps. Make sure to save your segmentations often. Remember you can right-click in the `Data` module and choose **Export As** and save your segmentation. 
-
-*	Image Geometry
-*	Mask vs LabelMap vs Segmentation
-*	Segment Editor and Segmentation tools
-*	Split/Mask Volume
-*	SegmentEndoCranium
-*	Segment Statistics
-*	Exporting/Importing Segmentations
-*	Pointers to segmentation recipes
-*	Customizing .slicerrc.py for shortcuts and keystrokes
