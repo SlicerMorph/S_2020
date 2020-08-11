@@ -18,7 +18,7 @@ If you are new to image segmentation, probably you should read the [official **I
 
 Even if you have previous experience with other 3D segmentation programs, it might be good to take a minute to read the Slicer specific functionalities and how different types of data types relate to each other (see figure below).
 
-<img src="https://github-production-release-asset-2e65be.s3.amazonaws.com/246939908/ee335380-9bd2-11ea-94af-381ca8ecefc6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200811%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200811T043324Z&X-Amz-Expires=300&X-Amz-Signature=33bf83aa7b9f1dc2e9b6a3945cf1c195008e404e5b6803da5282aac36c5bbf67&X-Amz-SignedHeaders=host&actor_id=0&repo_id=246939908&response-content-disposition=attachment%3B%20filename%3Ddata_loading_and_saving_formats.png&response-content-type=application%2Foctet-stream">
+<img src="DataTypes.png">
 
 
 ### Additional Resource for Image Segmentation in Slicer
