@@ -4,11 +4,12 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 # Day 2 Contents
 
-**3D VISUALIZATION**
+**3D VISUALIZATION with Volume Rendering**
 
 -	[Volume Rendering](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/VolumeRendering/VolumeRendering.md)
--	[Lighting]()
--	[Animator]()
+-	[Animator](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/SlicerAnimator/SlicerAnimator.md)
+-	[Lighting](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/Lighting/Lights.md)
+
 
 **COLLECTING MEASUREMENTS**
 

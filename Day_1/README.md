@@ -27,7 +27,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 *	[Models](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/Models/Models.md) 
 *	[SampleData-Volumes-CropVolume](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/CropVolume/CropVolume_and_Volumes.md)
 *	[Transforms](https://github.com/SlicerMorph/S_2020/blob/master/Day_1/Transforms/Transforms.md)
-*	[Customizing the Slicer Application (Application Settings)](https://slicer.readthedocs.io/en/latest/user_guide/settings.html)
-* [SlicerMorph Specific customization suggestions](https://seattlechildrens1.app.box.com/v/SliceMorphDownloads/file/572062269652)
+*	[Customizing the Slicer Application (Application Settings - TBD)](https://slicer.readthedocs.io/en/latest/user_guide/settings.html)
+* [SlicerMorph Specific customization suggestions - TBD](https://seattlechildrens1.app.box.com/v/SliceMorphDownloads/file/572062269652)
 * Data Backup strategies ('Create New')
 
