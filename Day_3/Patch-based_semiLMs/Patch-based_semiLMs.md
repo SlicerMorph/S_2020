@@ -34,9 +34,15 @@ This method uses three landmarks already placed on the specimen to define a tria
 
 <img src="./Picture26.png">
 
-9.  From the landmark node viewer, right click on the merged semi-landmark node. Choose 'Export as' from the menu and select the option to export as an .FCSV file. The 'Export as' option can also be accessed from the landmark node viewer in the 'Markups' module or the node viewer in the 'Data' module. 'Export as' can be used from the 'Data' module to save the table containing the semi-landmark grid as a .CSV file. This table specifies the landmark number at each patch vertex and can be used to reconstruct the sampling grid for future specimen.
+9. Switch to the data browser and find the table 'Semi-landmark Grid' displayed in the 'Subject hierarchy' menu. Click the eye next to the table to view a list that specifies the landmark number at each patch vertex in the merged landmark set. This can be used to apply semi-landmarks to new images using the same patch-placement.  
 
-10. If you are saving multiple nodes, or would like to save the entire scene, you may choose to use the built-in 'Save as' dialog box. Click the 'Save' icon in the top toolbar to pull up the standard menu of export options for each node in the scene. 
+<img src="./Picture27.png"> 
+
+10. From the 'Data' node viewer, right click on the merged semi-landmark node. Choose 'Export as' from the menu and select the option to export as an .FCSV file. This 'Export as' option can also be accessed from the landmark node viewer in the 'Markups' module or the 'Semi-landmark' module. Use 'Export as' from the 'Data' module to save the table containing the semi-landmark grid connectivity as a .CSV file. 
+
+<img src="./Picture27_5.png"> 
+
+If you are saving multiple nodes, or would like to save the entire scene, you may choose to use the built-in 'Save as' dialog box. Click the 'Save' icon in the top toolbar to pull up the standard menu of export options for each node in the scene. 
 
 <img src="./Picture28.png"> 
 
