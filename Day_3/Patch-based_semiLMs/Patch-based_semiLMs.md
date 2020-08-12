@@ -27,7 +27,7 @@ This method uses three landmarks already placed on the specimen to define a tria
 
 5. If the semi-landmark patch was placed successfully, more patches can be placed. If the placement failed, this patch can be deleted or replaced. If the underlying geometry is not approximated well by a triangular patch, different coordinates should be used. If the point placement failed due to a secondary surface or noise in the mesh surface, the advanced properties of the SemiLandmarking module can be used to optimize placement. In the case of points placed on the incorrect mesh surface (eg interior surface, neighboring structure), the maximum projection distance should be adjusted. In the case of noise on the mesh surface, the landmark points may not provide a reasonable estimate of the patch surface normal. Increasing the smoothing of the surface normals used for projection can mitigate this.
 
-<img src="./Picture23.png">
+<img src="./Picture23.png" width="500px">
 
 6. Apply patches of semi-landmarks until the region of interest is covered. Here, we have placed 18 triangular patches. 
 
@@ -35,7 +35,7 @@ This method uses three landmarks already placed on the specimen to define a tria
 
 7. In the landmark node viewer, select the nodes to be merged into the final set of semi-landmarks. Here, every semi-landmark node has been selected (it is not necessary to select the original landmark node). Click the 'Merge highlighted nodes' button'. Depending on the number of semi-landmarks, this step may take a few minutes.
 
-<img src="./Picture25.png">
+<img src="./Picture25.png" width="500px">
 
 8. A new, merged semi-landmark node is now displayed in the landmark node viewer containing the patch landmarks and curves placed along each unique triangle edge.
 
@@ -51,4 +51,4 @@ This method uses three landmarks already placed on the specimen to define a tria
 
 11. The table of grid vertices can be used to apply the same semi-landmark patches to new samples using the 'TransferSemiLandmarks' module. Or, the 'TransferSemiLandmarksWarp' module can be used to transfer the semi-landmarks from the template across subjects using a TPS transform. Open the 'TransferSemiLandmarksWarp' from the SlicerMorph Labs menu. The 'Base mesh' and 'Base landmarks'  can be set to the template and landmarks loaded in the scene. The 'Base semi-landmarks' should be set to the merged set of semi-landmarks created in this exercise. By specifying a directory of sample meshes and landmarks, the module will write a semi-landmark file for each sample to the output directory.
 
-<img src="./Picture29.png"> 
+<img src="./Picture29.png" width="500px"> 
