@@ -16,11 +16,11 @@ Please note that segmentation is a memory intensive operation. It is suggested, 
 
 ## Required software
 Please participate in one of the tech check-ins scheduled for 
+
 1. August 11th, 11-12p (Pacific Daylight Time)
 2. August 13th, 10-11 (Pacific Daylight Time) 
 
-Go to https://download.slicer.org and download the latest preview (**not the stable 4.10**) for your OS, and install it. On Mac, after the install if the security policies does not allow you to run Slicer, you can override them following [these instructions](https://discourse.slicer.org/t/unsigned-application-issue-on-mac/12930/2). For the similar issue on Windows 10, you can click on 'More Info' button, and then choose 'Install anyways'.
-
+If you cannot attend either of those, [instructions are here](https://github.com/SlicerMorph/S_2020/blob/master/Tech-Checkin.md) 
 
 
 **Accounts:** Please obtain an account on these websites prior to workshop
