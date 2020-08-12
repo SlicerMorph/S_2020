@@ -9,7 +9,7 @@ Let's look at the basic of the `Transform` module:
 2. Make sure you are in the **Subject Hierarchy** tab of the `Data` module
 3. Right-click on your 3D model node and choose **Clone**. This will create a copy of your existing model.
 4. Adjust the colors of these models by clicking on the color square such that they are easily distinguished.
-5. Click on the layout icon and choose **Dual 2D**
+5. Click on the layout icon and choose **Dual 3D**
 6. Click on the pin to bring 3D view settings, and the lock the two viewers. This way 3D view will be sync and any camera movement (i.e., moving specimen in 3D space will be changing both views). Rotate the specimen in one view and note that's reflected in the other viewer.
 7. You can adjust the size of the 3D views by dragging the bar separating slice views from 3D viewers and moving up and down (indicated by yellow rectangle). At this point you are probably seeing only one of the specimens in both views.
 
