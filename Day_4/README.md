@@ -6,7 +6,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 **SLICERMORPH and Geometric Morphometrics (Semi Landmarks)**
 *	Surface Toolbox to edit 3D models 
-* ALPACA
+* [Automated landmarking through pointcloud alignment and correspondence analysis (ALPACA)](https://github.com/SlicerMorph/S_2020/blob/master/Lab_ALPACA/README.md)
 * Importing SlicerMorph data into R
 
 
