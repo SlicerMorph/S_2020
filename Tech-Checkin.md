@@ -11,9 +11,9 @@ After the restart, open the module list and see that SlicerMorph is now listed.
 
 <img src="extension_manager.png">
 
-4. Click on ALPACA (SlicerMorph->SlicerMorph Labs), this will download and install an external python library called *Open3D*. It is a large library and it may take 5-10 minutes to install, during which Slicer will look like it stalled. Be patient. [Mac users who are using versions earlier than 10.15, need to follow this instructions in their Python console.](https://discourse.slicer.org/t/cant-load-open3d/12950/6?u=muratmaga) 
+4. Click on ALPACA (SlicerMorph->SlicerMorph Labs), this will download and install an external python library called *Open3D*. It is a large library and it may take 5-10 minutes to install, during which Slicer will look like it stalled. Be patient. [Mac users who are using MacOS earlier than 10.15, need to follow this instruction in their Python console.](https://discourse.slicer.org/t/cant-load-open3d/12950/6?u=muratmaga) 
 
-5. Then go to Auto3Dgm, which will also download an external python library called Mosek. 
+5. Go to Auto3Dgm, which will also download an external python library called Mosek. 
 Mosek is a proprietary library and you will need a license to run. You can either request a free academic license for a year, or ask for a trial license for 30 days. Follow the license installation instructions at https://toothandclaw.github.io/installations. **HINT:** you can actually search for a file called *save_mosek_license_here* and copy the license file (mosek.lic) sent to you to the same place as this file. 
 
 6. If you haven't encountered any issues, at this point you should be set. Please type these comments to your python window to double-check (there should no error messages):
@@ -36,5 +36,5 @@ If you end up getting error message about any of these libraries being missing, 
 ### Other considerations
 * We highly advise using an external 3-button mouse with Slicer (not a trackpad). 
 * If you are working off a laptop, an external monitor would be very useful too. That way you can keep the zoom session on the external monitor while running your own Slicer on your laptop screen. 
-* Please do not install slicer or save any of the sample data during workshop in a cloud syncing drive (e.g., onedrive, dropbox or box) or a network drive. We have been many strange issues, including data corruption and missing files. A workshop folder on your desktop is an ideal place to keep all your sample data.    
+* Please do not install slicer or save any of the sample data during workshop in a cloud syncing drive (e.g., onedrive, dropbox or box) or a network drive. Over the years, we have seen many strange issues, including data corruption and missing files. A workshop folder on your desktop is an ideal place to keep all your sample data.    
 
