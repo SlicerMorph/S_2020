@@ -6,13 +6,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 **SLICERMORPH and Geometric Morphometrics (Semi Landmarks)**
 *	Surface Toolbox to edit 3D models 
-*	Generating semi-landmarks
-  * Curve-based
-  * Patch-based
-*	Transfering SemiLMs via Thin-Plate Splines deformation
-* Spherical/Ellipsoid geometry to generate semiLM template 
 * ALPACA
-* Using MarkupsEditor to subset dense LM sets
 * Importing SlicerMorph data into R
 
 
