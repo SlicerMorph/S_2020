@@ -6,16 +6,17 @@ To use the `ImageStacks`, first download <a href="https://app.box.com/s/zvs162oj
 Then find the `ImageStacks` under SlicerMorph menu folder and:
 
 1. Click the **Browse Files** button and select all *PNG* files in the folder you just unzipped.
+
+<img src="ImageStacks1.png">
+
 2. Image spacing in this dataset is provided in the accompanying left_side_damaged__rec.log file as 35.28 micron. Enter this value in millimeters as 0.03528 for all three axes
 3. You leave the **Output Volume** blank, which will use the filename prefix. Or you can choose to create a new volume name. 
 4. Click **Load Files** and see that all three slices viewers contain our data.
-5. To visualize what the specimen looks like, go to `Data` module and right-click in the area shown in green arrow and then choose 'Show 3D views as Volume Rendering'. (Note: We will cover `Volume Rendering` module in great detail tomorrow. For the time being, this is all you need)
+5. To visualize what the specimen looks like, go to `Data` module and right-click in the to the right of the eye button and then choose 'Show 3D views as Volume Rendering'. (Note: We will cover `Volume Rendering` module in great detail tomorrow. For the time being, this is all you need)
 
 <img src="Data_Volume_Rendering.png">
 
-and see that the resultant rendering show the damage to the zygomatic arch in the **right side** of the specimen. Curiously, the specimen is named **Left side damaged**. 
-
-<img src="ImageStacks1.png">
+Notice that the resultant rendering show the damage to the zygomatic arch in the **right side** of the specimen. Curiously, the specimen is named **Left side damaged**. 
 
 Indeed you can check what the real specimen looks like by going to the link below, and confirm that it is indeed the left zygomatic arch is missing. 
 
