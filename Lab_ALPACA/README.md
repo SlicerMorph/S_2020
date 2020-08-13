@@ -120,6 +120,90 @@ Now that we are acquainted with the overall layout of the module, let's start by
 
 <img src="images/scap14.png">
 
+## Post-processing
+
+Once a batch of specimens have their landmark positions predicted using `ALPACA`, the user has the option of further exploring the performance of the method. Here, we will investigate whether the skull shapes recovered using `ALPACA` correspond reasonably to what would be obtained by manual annotation. For this step, we will use a small dataset of Gorilla skulls for which we have both manual annotations and automated predictions.
+
+Please find the navigation drop-down menu and then click:
+
+  * __SlicerMorph > GPA__ 
+  
+<br />
+<p align="center">
+<img src="images/scap15_cropped.png">
+</p>
+<br />
+
+* Once inside the `GPA` module, let's select the folder containing the landmark files and the output folder (in this case, the same folder) and then press `Execute GPA + PCA`.
+
+<br />
+<img src="images/scap16_anno.png">
+<br />
+
+* If everything loaded correctly, you should observe something like this:
+
+<br />
+<img src="images/scap17.png">
+<br />
+
+* To further facilitate our interpretation of the results, we will also load a surface model for the 3D views. Find `Setup 3D visualization` and select the _Gorilla_ skull mesh and landmarks that were downloaded using the `Sample Data` module in previous days. Remember that the `Sample Data` module will download all files to your Slicer cache folder.
+
+<img src="images/scap18_anno.png">
+
+Once all data visualization is set, we can now investigate whether the landmarking method (manual or automated) affects the shape estimate of each specimen. In order to do so, we will create a factor called `LM_method` using the `PCA Scatter Plot Options` and use that factor to color-code the specimens in the PCA plots.
+
+* Under `PCA Scatter Plot Options`, type 'LM_method' in the `Factor Name` box and then press `Add factor data`
+
+* Note that a new column was added to the table on the right corner of the screen.
+
+<img src="images/scap19_anno.png">
+
+* For the purposes of this exercise, you will have to type the factor data for each specimen. Note that the files have filenames that end on 'LM1' or 'Cranium'.
+  * `LM1` refers to the manual annotation
+  * `Cranium` refers to the ALPACA predicted landmarks.
+
+* Once you finish typing the information, select 'LM_method' under the `Select factor` tab and then press `Scatter Plot`.
+
+<img src="images/scap20_anno.png">
+
+* If everything ran correctly, you should observe a new middle plot that should look like this:
+
+<img src="images/scap21.png">
+
+* The PCA plots reveal some interesting things about how the method performed in this small dataset.
+
+  * First, the two distributions are largely overlapping and data points belonging to the same individual cluster together in multivariate shape space (`red boxes`)
+  * Second, the two distributions also have similar means.
+
+<img src="images/scap21_anno1.png">
+
+* However, we can also observe some interesting differences:
+  * Note the data point in red at the upper left corner of the plot (`red box`). This is a data point produced by the ALPACA method that has no near neighbor. This sample is a good candidate for further inspection for prediction errors.
+  * Note also the four blue data points that are on the lower tail of the PC2 distribution (`red box`). These data points were manually landmarked and also have no near-neighbors in the automated dataset. What could explain such difference?
+  
+<img src="images/scap21_anno2.png">
+
+* To explain such differences, let's look at what shape changes are produced along the PC2 axis. In order to do so, let's select the PC2 under `PCA visualization parameters`. 
+
+<img src="images/scap22_anno.png">
+
+* Using the provided sliders (highlighted), let's deform the 3D model in the direction of those four data points at the lower tail of the PC2 distribution.
+
+<img src="images/scap23_anno.png">
+
+* Note that specimens at the lower end of the PC2 distribution have elongated skulls. Given that information, it is likely that the parameters chosen in the `deformable registration` step of the `ALPACA` pipeline might need some fine tuning. 
+
+## Final remarks
+
+* As a final remark, we should note that the `ALPACA` module can also be used synergistically with other `SlicerMorph` modules. For example, users can use not only manually annotated landmarks in the `ALPACA` pipeline, but also include semi-landmarks that were sampled on the 3D surface using the `Spherical Sampling` lab. 
+
+<img src="images/scap24.png">
+
+
+
+### And that is it for now!
+
+
 
 ### And that is it for now!
 
