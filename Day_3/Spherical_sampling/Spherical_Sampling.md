@@ -28,9 +28,11 @@ To address the low sampling rate in areas of high curvature, the sampling rate c
 
 1. As in the previous example, select the loaded gorilla skull as the base mesh and set the spacing tolerance to 3%. Select the 'Original Geometry' option for the template geometry, and check the number of sampled points by clicking the 'Get subsample number' button. You should see 1052 sampled points.
 
+<img src="./Picture5.png">
+
 2. Click the 'Generate template' button. This time, you will see a template mesh that is an approximation of the gorilla skull.
 
-<img src="./Picture5.png">
+<img src="./Picture5_5.png">
 
 3. Select the 'Project points' button, followed by the 'Enforce spatial sampling rate' button. The spatial filtering may take a few minutes. When complete, the final spherically sampled point set will be displayed on the base mesh. This point set provides more regular coverage of the mesh surface and performs better in areas of high curvature. 
 
