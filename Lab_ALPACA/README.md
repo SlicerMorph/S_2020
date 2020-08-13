@@ -205,7 +205,6 @@ Once all data visualization is set, we can now investigate whether the landmarki
 
 
 
-### And that is it for now!
 
 
 
