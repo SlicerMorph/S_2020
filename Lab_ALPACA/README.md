@@ -122,7 +122,7 @@ Now that we are acquainted with the overall layout of the module, let's start by
 
 ## Post-processing
 
-Once a batch of specimens have their landmark positions predicted using `ALPACA`, the user has the option of further exploring the performance of the method. Here, we will investigate whether the skull shapes recovered using `ALPACA` correspond reasonably to what would be obtained by manual annotation. For this step, we will use a small dataset of Gorilla skulls for which we have both manual annotations and automated predictions.
+Once a batch of specimens have their landmark positions predicted using `ALPACA`, the user has the option of further exploring the performance of the method. Here, we will investigate whether the skull shapes recovered using `ALPACA` correspond reasonably to what would be obtained by manual annotation. For this step, we will use a [small dataset of Gorilla skulls](https://app.box.com/s/a1eg0m2d5f41o6bbqa604tgz528xgsq2/) for which we have both manual annotations and automated predictions.
 
 Please find the navigation drop-down menu and then click:
 
