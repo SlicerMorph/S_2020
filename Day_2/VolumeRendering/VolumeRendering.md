@@ -15,7 +15,7 @@ The `Volume Rendering` module provides interactive visualization of 3D image dat
 * Crop 3D view vs Crop Volume confusion
 
 
-### Example 4: Volume Rendering 
+### Example: Volume Rendering 
 1. Load the MRIHead volume from the `Sample Data` module.
 2. Open the `Volume Rendering` module. In the **Volume** field, make sure the volume MRHead is selected. Click the eyeball next to the **Volume** field to display the image. You can change the 3D Slicer layout to 3D only.
 
@@ -28,7 +28,7 @@ The `Volume Rendering` module provides interactive visualization of 3D image dat
 <img src="./colorPreset.png">
 
 
-### Example 5: SlicerAnimator
+### Example: SlicerAnimator
 The `Animator` module helps create and export animations in mp4 or GIF format. The animations are created by visualizing a volume and adjusting the rotation, ROI cropping, and rendering properties. A demo video of this module is also available [here](https://youtu.be/9GBekYcJR4E) .
 
 1. Load the MRIHead volume from the `Sample Data` module.
