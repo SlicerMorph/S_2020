@@ -6,10 +6,10 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 **GETTING STARTED WITH SLICER & SLICERMORPH**
 
-* [Introduction to Slicer](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html)
+* [Introduction to Slicer - Official Slicer Documentation](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html)
 * [Difference between Slicer and SlicerMorph](https://docs.google.com/document/d/1VdsYQzhjEh9tT5WQQjb1GUdn5Hmnq8cK3yLzjYeVv5M/edit)
 
-### Slicer Basics (UI, Input/Output and Data)
+### Slicer Basics (UI, Input/Output and Data) from Official Slicer Documentation
 *	[Navigating UI](https://slicer.readthedocs.io/en/latest/user_guide/user_interface.html)
 * [Extension Manager and Catalogue](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html#extensions)
 * [Loading Data and Saving (Slicer's Default way)](https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html)
