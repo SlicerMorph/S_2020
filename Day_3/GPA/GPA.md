@@ -28,6 +28,7 @@ lineToReplace = "          indexToRemove.append(self.LMExclusionList[i]-1)\n"
 GPAPath = slicer.modules.gpa.path
 moduleEdit(stringToFind, lineToReplace, GPAPath)
 ```
+If the patch runs successfully the Python interactor will print out: 'Success: replacing line 1133'. Restart Slicer to reload the GPA module.
 
 ### Mouse Dataset 
 
