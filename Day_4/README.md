@@ -12,6 +12,8 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 **ODDS and ENDS**
 * Calculating cross-sectional area from segmentation (calculated per slice)
+* [Cross-sectional area of 3D models using curves. Dynamic modeler curve cut, and compare this to SA from curves exercise from day 2](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/Markups/Markups.md#example-1-using-markups-for-measurement)
+
 * Using Landmarks to align volumes/modules through TPS.
 *	Calculating model to model distance and heatmaps.
 *	Flatting curved structures 
