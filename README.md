@@ -33,6 +33,7 @@ If you cannot attend either of those, [instructions are here](https://github.com
 
 *	SlicerMorph project website: https://www.SlicerMorph.org
 * Link to the Sample Datasets for the workshop: https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m
+* [Link to submit interesting images. Please know that we might post these on twitter or on our website](https://faculty.washington.edu/maga/data_dropbox/) 
 
 #### Funding acknowledgement
 Development of SlicerMorph and the intense workshops are generously funded by National Science Foundation Advances in Bioinformatics collobrative research grants to Murat Maga (ABI-1759883), Adam Summers (ABI-1759637) and Doug Boyer (ABI-1759839). 
