@@ -14,7 +14,6 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 **COLLECTING MEASUREMENTS**
 
 -	[Markups](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/Markups/Markups.md)
-- [Cross-sectional area of 3D models using curves.](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/Markups/Markups.md#example-1-using-markups-for-measurement)
 
 [**SEGMENTATION**](https://github.com/SlicerMorph/S_2020/blob/master/Day_2/Segmentation/Segmentation.md)
 
