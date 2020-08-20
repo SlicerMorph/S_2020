@@ -19,7 +19,6 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * Using Landmarks to align volumes/modules through TPS.
 *	Flatting curved structures 
 *	Importing raw data
-* Flatting curved structures 
 
 
 
