@@ -35,7 +35,7 @@ Once you set these, hit Apply and wait. It may take couple minutes. The procedur
 
 Now go back to the `Surface Toolbox` and review other editing functions, such as **Mirror**, **Scale Mesh** and **Smoothing**. With these, you may not need to go to a dedicated mesh editing tool like **MEshLab**. But of course, functions in the `Surface Toolbox` is limited to a few common tasks. 
 
-##Dynamic Modeler
+## Dynamic Modeler
 
 An emerging tool in Slicer is the new `Dynamic Modeler` tool, which aims to provide direct mesh editing in Slicer. Currently, the functionality is limited to cutting meshes with various markups (such as a Plane or a curve). But even with these, it is actually fairly powerful. Continuing from the exercise above, we will demonstrate one use case in which you can make a surface cut with a close curve and calculate its area accurately. 
 
