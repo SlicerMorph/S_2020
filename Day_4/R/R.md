@@ -1,7 +1,7 @@
 ## Getting SlicerMorph Data into R
 
 Currently the simplest way is to read the same fcsv folder you used for `GPA` module into R. 
-If you have R and Morpho installed on your computer, you can copy this code, paste into an editor and change the paths to point out to the correct locations in your Cache folder. 
+If you have R and Morpho installed on your computer, you can copy this code, paste into an editor and change the paths to point out to the correct locations in your Cache folder. (**NOTE:** Geomorph will also work, but they recently changed how to conduct PCA and build the analysis in their new version, that I didn't have to look into in detail. I kept getting an error about missing ordinate function). 
 
 I am using the gorilla skulls example from the GPA module. If you haven't gone through that example in yesterday, you might want to download it from the `SampleData` module and then run it quickly with `GPA` module, and update the file paths. 
 
