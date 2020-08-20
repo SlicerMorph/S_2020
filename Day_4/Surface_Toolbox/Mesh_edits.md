@@ -1,6 +1,6 @@
 ## Editing Meshes in Slicer  
 
-0. If you want to do the step #7, you will need to install **Model to Model Distance Extension** from the Extension Manager, as this is not an extension currently bundled with SLicerMorph. After the install, you need to restart the Slicer for the module to be available. If you don't want to do this step, you can just read the tutorial and come back to it at a more convenient time. 
+0. If you want to do the step #7, you will need to install **ModelToModelDistance Extension** from the Extension Manager, as this is not an extension currently bundled with SLicerMorph. After the install, you need to restart the Slicer for the module to be available. If you don't want to do this step, you can just read the tutorial and come back to it at a more convenient time. 
 
 1. For this exercise, we will use the sample microCT stack from the `Sample Data` module. This is the same dataset we used in Day 1 to test the `ImageStacks`. If you don't have it anymore from Day 1, go to `Sample Data` module, and click on **Sample MicroCT Stack**, and then use the `ImageStacks` to import it. 
 
