@@ -2,7 +2,7 @@
 
 0. If you want to do the step #7, you will need to install **ModelToModelDistance Extension** from the Extension Manager, as this is not an extension currently bundled with SLicerMorph. After the install, you need to restart the Slicer for the module to be available. If you don't want to do this step, you can just read the tutorial and come back to it at a more convenient time. 
 
-1. For this exercise, we will use the sample microCT stack from the `Sample Data` module. This is the same dataset we used in Day 1 to test the `ImageStacks`. If you don't have it anymore from Day 1, go to `Sample Data` module, and click on **Sample MicroCT Stack**, and then use the `ImageStacks` to import it. 
+1. For this exercise, we will use the sample microCT stack. This is the same dataset we used in Day 1 to test the `ImageStacks`. If you don't have it anymore from Day 1, save <a href="https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m/file/701646040827" target="_blank"> Sample_microCT_stack.zip</A> to a location you can find, unzip the file, and then use the `ImageStacks` to import it. 
 
 2. To create a 3D model from scratch, first we need to segment, and then export this segmentation as a 3D model data node. To do this, switch to the `Segment Editor`, and use the threshold tool to create a segmentation of the full skull. You can experiment with either automated threshold methods (such Otsu, or Isodata), or you can manually specify the range I used, which is 18-229. 
 
