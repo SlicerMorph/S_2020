@@ -4,10 +4,13 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 # Day 4 Contents
 
-**SLICERMORPH and Geometric Morphometrics (Semi Landmarks)**
-*	Surface Toolbox to edit 3D models 
+**SLICERMORPH and Geometric Morphometrics (Semi Landmarks) cont'ed**
 * [Automated landmarking through pointcloud alignment and correspondence analysis (ALPACA)](https://github.com/SlicerMorph/S_2020/blob/master/Lab_ALPACA/README.md)
 * Importing SlicerMorph data into R
+
+**EDITING MESH MODELS IN SLICER**
+*	Surface Toolbox and Dynamic Modeler to edit 3D models 
+* SlicerMorph ImportSurfaceToSegment model
 
 
 **ODDS and ENDS**
