@@ -52,3 +52,10 @@ An emerging tool in Slicer is the new `Dynamic Modeler` tool, which aims to prov
 
 **Note** Dynamic modeler is very recent, if you encounter issues please post it on the Slicer forum along with the error log, so that the developers can fix the issues. 
 
+## ImportSurfaceToEdit
+
+SlicerMorph provides a convenience function to import a surface model into Slicer as a segmentation node, so that you can use the `Segment Editor` to directly edit the mesh. Note that all the intensity based tools (such as Level Tracing, Thresholding, etc) won't be of use in this case, as there is not underlying intensity image for this segmentation. However, you can use tools like `Scissors` to clean up extranous material from an existing mesh. 
+
+12. To use the tool, go to **SlicerMorph->ImportSurfaceToSegment** then click on the `...` button next to *Select surface to edit* button, and navigate to your Cache directory and choose the  **Gor_template_low_res.vtk** file and hit **Apply**
+
+SlicerMorph will process the data, and when it is done it will automatically switch to the `SegmentEditor` with the model showing up as a single segment. You can then try the scissor tool (or others) and edit the segmentation. To export the editted segmentation back into a 3D model, use the procedure described in Step #3 above. 
