@@ -8,6 +8,8 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * Landmark-free geometric analysis presentation by Doug Boyer
 * [Auto3Dgm Slicer implementation tutorial breakout sessions.](https://toothandclaw.github.io/how-to-use/)
 * [A video tutorial of running auto3Dgm](https://www.dropbox.com/sh/sv8328dvpczezkk/AAAfNHWUL5HThQHG1wGNUdNua?dl=0&preview=Auto3dgm_tutorial.mp4)
+* [A Dataset previously run with Auto3Dgm, with 400 points.](https://app.box.com/s/tejeovx1alibv4r1jatc06t3pcfzc6r4)
+Dataset is an example of what you should get out of a regular run of Auto3Dgm with high number of points. 
 
 
 **In the afternoon**
