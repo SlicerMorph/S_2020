@@ -5,7 +5,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 # Day 5 Contents
 
 **SLICERMORPH and Geometric Morphometrics (Auto3Dgm)**
-* Landmark-free geometric analysis presentation by Doug Boyer
+* [Landmark-free geometric analysis presentation by Doug Boyer](https://github.com/SlicerMorph/S_2020/blob/master/Day_5/Auto3Dgm_Boyer_8-21-20.pdf)
 * [Auto3Dgm Slicer implementation tutorial breakout sessions.](https://toothandclaw.github.io/how-to-use/)
 * [A video tutorial of running auto3Dgm](https://www.dropbox.com/sh/sv8328dvpczezkk/AAAfNHWUL5HThQHG1wGNUdNua?dl=0&preview=Auto3dgm_tutorial.mp4)
 * [A Dataset previously run with Auto3Dgm, with 400 points.](https://app.box.com/s/tejeovx1alibv4r1jatc06t3pcfzc6r4)
