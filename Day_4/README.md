@@ -16,7 +16,7 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 
 **ODDS and ENDS**
 * Calculating cross-sectional area from segmentation (calculated per slice)
-* Using Landmarks to align volumes/modules through TPS.
+* [Using Landmarks to align models/volumes using Fiducial Registration module.](https://1drv.ms/p/s!AhiABcbe1DBygcAwmU7_GDzj4iGxWg)
 *	Flatting curved structures 
 *	Importing raw data
 
