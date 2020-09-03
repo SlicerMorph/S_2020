@@ -25,7 +25,7 @@ GPA = procSym(LMs)
 
 plot(GPA$PCscores[,1:2], pch=20)
 
-#Remember to change the path to the correct output location of Gorilla SKull datasets.
+#Remember to change the path to the correct output location of Gorilla Skull datasets.
 
 PCs.from.SlicerMorph = read.csv(file='C:/temp/RemoteIO/Gorilla_Skull_LMs/2020-08-19_20_12_04/pcScores.csv')
 head(PCs.from.SlicerMorph[,1:5])
@@ -43,7 +43,7 @@ plot(GPA$PCscores[,1], PCs.from.SlicerMorph[,2], pch=20, xlab="R Scores", ylab='
 cor(GPA$PCscores[,1], PCs.from.SlicerMorph[,2])
 ```
 
-You should see plot that looks like the pne below, and almost perfect correlation between first PCs scores (within machine precision)
+You should see plot that looks like the one below, with almost perfect correlation between first pair of PC scores (within machine precision)
 
 <img src="PC_comp.png">
 
