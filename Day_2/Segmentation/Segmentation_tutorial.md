@@ -149,6 +149,8 @@ In case where you have an articulated specimen (e.g., a full fish skeleton), but
 
 If you have to use the entire volume (i.e., crop volume as described above is not option) you can also choose to modify the segmentation geometry (small red square in figure below). By default Slicer uses the image spacing of the master volume as the segmentation resolution. By using the geometry settings **Oversampling** option you can increase or decrease this segmentation resolution without actually modifying the original volume. Note that because this is an oversampling factors, higher numbers mean higher resolution (in contrast to CropVolume module). If you choose to use an oversampling of 0.5, you will reduce the data volume of your segmentation by a factor of 8. Likewise, if you choose oversampling as 2.00, you will increase the data volume of your segmentation by factor of 8. While it increases the memory consumption, oversampling will make segmenting thin structures (e.g., orbital walls, or flat bones) easier. It will also reduce the chance of these structures disappearing during smoothing or margin operations. However, be very careful using this on large datasets, since it will tremendously increase the memory consumption.   
 
+Also, if you are working with datasets that has anisotropic voxel sizes (e.g., Z plane is lower resolution than XY planes), consider enabling the isotropic spacing option. 
+
 <img src="images/geometry.png">
 
 
