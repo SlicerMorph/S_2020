@@ -130,7 +130,7 @@ As before, it is important to set Masking options correctly to achieve desired r
    <img src="images/Slide22.PNG">  
    <img src="images/Slide23.PNG">  
 
- **TECHNICAL NOTE** when you are segmenting thin structures, i.e., structures close to your voxel size -e.g. orbital walls-, it becomes challenging to use **Margin** effect. In such cases, smoothing may actually result in removal of those thin slivers of segments.  You can modify the *Image Geometry* options **oversampling** setting to increase the resolution of your segmentation. Keep in mind that doubling the oversampling rate will increase memory consumption 8 folds. See this [Discussion on how to segment thin structures](https://discourse.slicer.org/t/enhancing-orbital-walls-with-unsharp-mask-filtering/8440/) for more information
+ **TECHNICAL NOTE** when you are segmenting thin structures, i.e., structures close to your voxel size -e.g. orbital walls-, it becomes challenging to use **Margin** effect. In such cases, smoothing may actually result in removal of those thin slivers of segments.  You can modify the *Image Geometry* options **oversampling** setting to increase the resolution of your segmentation. Keep in mind that doubling the oversampling rate will increase memory consumption 8 folds. See the Memory Usage Consideration section below for more details.
 
 ## Mask volume and Split volume
 
