@@ -132,14 +132,28 @@ As before, it is important to set Masking options correctly to achieve desired r
 
  **TECHNICAL NOTE** when you are segmenting thin structures, i.e., structures close to your voxel size -e.g. orbital walls-, it becomes challenging to use **Margin** effect. In such cases, smoothing may actually result in removal of those thin slivers of segments.  You can modify the *Image Geometry* options **oversampling** setting to increase the resolution of your segmentation. Keep in mind that doubling the oversampling rate will increase memory consumption 8 folds. See this [Discussion on how to segment thin structures](https://discourse.slicer.org/t/enhancing-orbital-walls-with-unsharp-mask-filtering/8440/) for more information
 
-
-
 ## Mask volume and Split volume
 
 One of the most useful things you can do with Segmentation and LabelMaps is to mask raw images to remove unneccesary objects or clean up. 
     <img src="images/Slide24.PNG">  
 
 An important use case of masking is when you have more than one sample in your image and you want to create separate images via segmentation. See this [example](images/Grow_from_seeds_to_split_volumes.pdf)
+
+## Memory usage considerations
+
+During segmentation memory consumption may increase considerably (anywhere from 6-15X depending on the segmentation effect being used). This can result in out-of-memory problems when large datasets are segmented on computers with insufficient physical memory (RAM). 
+
+The simplest solution is to increase the virtual memory setting of the computer to very high value. This will make things work, but since virtual memory is slow compared to physical one, it will result in performance degradation.
+
+In case where you have an articulated specimen (e.g., a full fish skeleton), but you only want to segment cranial bones, then as oppose to using the full volume consider subsetting (or cropping) your volume. You can first use the `CropVolume` module (without interpolation) to extract the subset of the volume that contains the region you would like to segment. You can then segment the structures that you are interested using this cropped volume as the master volume. Using a cropped volume like this will reduce the memory burden of global operations such as threshold or island tools considerably. And because Slicer preserves the geometry of these individual segments, you can still overlay them correctly with the full volume if you need to. 
+
+If you have to use the entire volume (i.e., crop volume as described above is not option) you can also choose to modify the segmentation geometry (small red square in figure below). By default Slicer uses the image spacing of the master volume as the segmentation resolution. By using the geometry settings **Oversampling** option you can increase or decrease this segmentation resolution without actually modifying the original volume. Note that because this is an oversampling factors, higher numbers mean higher resolution (in contrast to CropVolume module). If you choose to use an oversampling of 0.5, you will reduce the data volume of your segmentation by a factor of 8. Likewise, if you choose oversampling as 2.00, you will increase the data volume of your segmentation by factor of 8. While it increases the memory consumption, oversampling will make segmenting thin structures (e.g., orbital walls, or flat bones) easier. It will also reduce the chance of these structures disappearing during smoothing or margin operations. However, be very careful using this on large datasets, since it will tremendously increase the memory consumption.   
+
+<img src="images/geometry.png">
+
+
+
+
 
 ## Segment Statistics
 
