@@ -17,6 +17,6 @@ The simplest support for sampling points on a mesh is a newly implemented method
 
 ## [Patch-based semiLMs:](https://github.com/SlicerMorph/S_2020/blob/master/Day_3/Patch-based_semiLMs/Patch-based_semiLMs.md)
 
-## [Pseudo-landmark sampling:](https://github.com/SlicerMorph/S_2020/blob/master/Day_3/Pseudo_landmark_sampling/Pseudo_landmark_sampling.md)
+## [Pseudo-landmark sampling:](https://github.com/SlicerMorph/S_2020/blob/master/Day_3/PseudoLMGenerator/PseudoLMGenerator.md)
 
 ## [MarkupEditor:](https://github.com/SlicerMorph/S_2020/blob/master/Day_3/MarkupEditor/MarkupEditor.md)
