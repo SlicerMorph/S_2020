@@ -1,34 +1,7 @@
 # SlicerMorph Module: Generalized Procrustes Analysis (GPA) Module
 
-## Preliminary Steps
-1. Review your *Temp* and *Cache* folder settings under **Edit->Application Settings** menu. Make sure these two point to folders that you can easily access (e.g., **C:/SlicerTemp/** for **Temp** and **C:/SlicerTemp/RemoteIO** for **Cache** folders. Putting these into a folder on your desktop is fine too). That's because we will use the `Sample Data` module to download some datasets directly into your **Cache** folder, and you will to find where they are to work with them. 
-
-2. Apply an update to the GPA module through the Python interactor. This patch is needed for Slicer versions prior to r29281. Open the Python interactor, then copy and paste the following code block:
-``` python
-def moduleEdit(stringToFind, lineToReplace, GPAPath):
-  with open(GPAPath, 'r') as file:
-    data=file.readlines()
-  lineNumber = 0
-  success = 0
-  for line in data:
-    lineNumber+=1
-    if line.find(stringToFind)>0:
-      print("Success: replacing line ", lineNumber)
-      data[lineNumber-1] = lineToReplace
-      success = 1
-  if success:
-    with open(GPAPath, 'w') as file:
-      file.writelines( data )
-  else:
-    print("Could not find line to replace")
-	
-
-stringToFind= "indexToRemove.append(LMExclusionList[i]-1)"
-lineToReplace = "          indexToRemove.append(self.LMExclusionList[i]-1)\n"
-GPAPath = slicer.modules.gpa.path
-moduleEdit(stringToFind, lineToReplace, GPAPath)
-```
-If the patch runs successfully the Python interactor will print out: 'Success: replacing line 1133'. Restart Slicer to reload the GPA module.
+## Preliminary Step
+Review your *Temp* and *Cache* folder settings under **Edit->Application Settings** menu. Make sure these two point to folders that you can easily access (e.g., **C:/SlicerTemp/** for **Temp** and **C:/SlicerTemp/RemoteIO** for **Cache** folders. Putting these into a folder on your desktop is fine too). That's because we will use the `Sample Data` module to download some datasets directly into your **Cache** folder, and you will to find where they are to work with them. 
 
 ### Mouse Dataset 
 
