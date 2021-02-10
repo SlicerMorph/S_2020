@@ -1,7 +1,7 @@
 ## ImageStacks
 This is a SlicerMorph specific utility to import non-DICOM image sequences (TIF/PNG/JPG/BMP) into 3D Slicer. It provides additional features such as only loading a subset of the data, downsampling (by factor of 2), skipping slice(s) along the Z plane, and reverse the stack order. You can also specify the voxel spacing for your dataset at the import time. `ImageStacks` always produces a ScalarVolume (single channel), so that volumes can be immediately visualized or can be processed with `Segment Editor`.
 
-To use the `ImageStacks`, first download <a href="https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m/file/701646040827" target="_blank"> Sample_microCT_stack.zip</A>, and unzip to a location. 
+To use the `ImageStacks` module in SlicerMorph, first go to the `Sample Data` module and download the *Bruker/Skyscan mCT Recon Sample* data OR you can download teh same file here: <a href="https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m/file/701646040827" target="_blank"> Sample_microCT_stack.zip</A>, and unzip to a location. 
 
 Then find the `ImageStacks` under SlicerMorph menu folder and:
 
@@ -31,7 +31,7 @@ This is a common problem across 3D visualization programs, when image sequences 
 ### Further exploration
 
 1. Use the other options of the `ImageStacks` and see how you can subset your data (hint, just choose a portion of the sequence, not all files), downsample and skip slices. 
-2. Go to the Morphosource website and download a microCT image stack of a specimen that you would like to work on the rest of the course. Use the `ImageStacks` tool to import the dataset into SlicerMorph. Note that some of the datasets in MorphoSource are many gigabytes when imported (pay attention to estimated memory usage reported by the tool). In such case, explore the data at low resolution using the downsample option as you may run into memory issues if you do not have sufficient RAM on your computer.
+2. Try using the `ImageStacks` tool to import any data you have of reconstructed files 
 
 ## SkyscanReconImport
 Note that while **reverse** corrected the mirroring issue, specimen is not correctly oriented in anatomical space (e.g., Inferior is marked as the front of the specimen). Again this goes back to the issue of microCT scanners not having coordinate convention. With a trial and error you can find the right transformation necessary to put the specimen into the correct space for your particular scanner. We have calculated that for our Bruker/Skyscan microCT and provide another module called `SkyScanReconImport` for the Skyscan users. 
