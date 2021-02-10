@@ -31,4 +31,4 @@ To use `ExportAs` go to the `Data` module, right click on either a volume, a mod
 
 
 ### On your own
-Try importing re-importing the image stack from the `ImageStacks` tutorial, and then use ExportAs to save it as in the NRRD format. After the export, close the scene (CTRL+W) and load the NRRD file by draggind and dropping it into Slicer main window. Likewise, go through the `MorphoSourceImport` tutorial and save one of the 3D models you have downloaded into PLY format. 
+Try importing re-importing the image stack from the `ImageStacks` tutorial, and then use ExportAs to save it as in the NRRD format. After the export, close the scene (CTRL+W) and load the NRRD file by draggind and dropping it into Slicer main window. 
