@@ -5,22 +5,25 @@ To use the `ImageStacks` module in SlicerMorph, first go to the `Sample Data` mo
 
 Then find the `ImageStacks` under SlicerMorph menu folder and:
 
-1. Click the **Browse Files** button and select all *PNG* files in the folder you just unzipped.
+1. Click the **Browse...** button and select a *PNG* file in the folder you just unzipped.
 
 <img src="ImageStacks1.png">
 
 2. Image spacing in this dataset is provided in the accompanying left_side_damaged__rec.log file as 35.28 micron. Enter this value in millimeters as 0.03528 for all three axes
 3. You leave the **Output Volume** blank, which will use the filename prefix. Or you can choose to create a new volume name. 
-4. Click **Load Files** and see that all three slices viewers contain our data.
-5. To visualize what the specimen looks like, go to `Data` module and right-click just to the right of the eye button and then choose 'Show 3D views as Volume Rendering'. (Note: We will cover `Volume Rendering` module in great detail tomorrow. For the time being, this is all you need)
+4. To preview a low resolution version of your file make sure the **preview** quality option is slected and click **Load Files** and see that all three slices viewers contain a low resolution version of our data.
+5. To visualize what the specimen looks like, go to `Data` module and right-click just to the right of the eye button and then choose 'Show 3D views as Volume Rendering'. (Note: We will cover `Volume Rendering` module in great detail tomorrow. For the time being, this is all you need). You may need to center your volume using the crosshairs button or zoom in in order to see the 3D volume in the window. 
 
 <img src="Data_Volume_Rendering.png">
 
-Notice that the resultant rendering show the damage to the zygomatic arch in the **right side** of the specimen. Curiously, the specimen is named **Left side damaged**. 
+6. If everything looks good and you want to visualize the full resolution version of your entire file you can go back to the `ImageStacks` module, change the quality from **preview** to **full resolution**
+7. Let's say you have a large file and you only want to visualize a portion of the total scanned volume at full resolution, such as only segmenting the braincase of the mouse. Before loading in the full resolution volume, we can do that useing a region of interest on the preview resolution image. First in the `Data` module click the eye ball button to view the **AnnotationROI** and use the collored circles so that the ROI includes only the mouse braincase. Now go to the `ImageStacks` modlue and select the **AnnotationROI** for the Region of interest and create a new output volume (I've named mine mouseBraincase), change the Quality to **full resolution** and click **Load Files**
 
-Indeed you can check what the real specimen looks like by going to the link below, and confirm that it is indeed the left zygomatic arch is missing. 
+<img src="ImageStacksROI.png">
 
-<a href="https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m/file/701653679714"> **Picture of the specimen in the sample stack** </A>
+Notice that the slice views show only the volume in the region of interest and are now full resolution. 
+
+### What if my image is flipped (right and left sides of the specimens are mirrored) 
 
 This is a standard problem of using image stacks to convey geometric information. There is no convention of what the **top** of the stack versus **bottom** of the stack is. It is all relative and depends on the scanner vendors' convention. To mitigate this issue, `ImageStacks` offers a **Reverse** option, which basically flips the stack 180 degrees and corrects this mirroring.
 
