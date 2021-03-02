@@ -16,20 +16,29 @@ Then find the `ImageStacks` under SlicerMorph menu folder and:
 
 <img src="Data_Volume_Rendering.png">
 
-6. If everything looks good and you want to visualize the full resolution version of your entire file you can go back to the `ImageStacks` module, change the quality from **preview** to **full resolution**
-7. Let's say you have a large file and you only want to visualize a portion of the total scanned volume at full resolution, such as only segmenting the braincase of the mouse. Before loading in the full resolution volume, we can do that useing a region of interest on the preview resolution image. First in the `Data` module click the eye ball button to view the **AnnotationROI** and use the collored circles so that the ROI includes only the mouse braincase. Now go to the `ImageStacks` modlue and select the **AnnotationROI** for the Region of interest and create a new output volume (I've named mine mouseBraincase), change the Quality to **full resolution** and click **Load Files**
+Notice that the resultant rendering show the damage to the zygomatic arch in the **right side** of the specimen. Curiously, the specimen is named **Left side damaged**. 
 
-<img src="ImageStacksROI.png">
+Indeed you can check what the real specimen looks like by going to the link below, and confirm that it is indeed the left zygomatic arch is missing. 
 
-Notice that the slice views show only the volume in the region of interest and are now full resolution. 
-
-### What if my image is flipped (right and left sides of the specimens are mirrored) 
+<a href="https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m/file/701653679714"> **Picture of the specimen in the sample stack** </A>
 
 This is a standard problem of using image stacks to convey geometric information. There is no convention of what the **top** of the stack versus **bottom** of the stack is. It is all relative and depends on the scanner vendors' convention. To mitigate this issue, `ImageStacks` offers a **Reverse** option, which basically flips the stack 180 degrees and corrects this mirroring.
 
 <img src="ImageStacks2.png">
 
 This is a common problem across 3D visualization programs, when image sequences are used to present 3D data. Because of this, it is very important to have independent confirmation of correct import procedure. Look for asymmetrical structures on your specimen and confirm that they appear on the correct side in the 3D rendering. After a successful import (correct specimen size, orientation) you should immediately save your data in a proper 3D volume format that will retain this information (which will be our next topic). 
+
+
+Once you have reversed your image and you want to visualize the full resolution version of your entire file you can go back to the `ImageStacks` module, change the quality from **preview** to **full resolution**
+
+### Using ROI with Image Stacks
+Let's say you have a large file and you only want to visualize a portion of the total scanned volume at full resolution, such as only segmenting the braincase of the mouse. Before loading in the full resolution volume, we can do that useing a region of interest on the preview resolution image. First in the `Data` module click the eye ball button to view the **AnnotationROI** and use the collored circles so that the ROI includes only the mouse braincase. Now go to the `ImageStacks` modlue and select the **AnnotationROI** for the Region of interest and create a new output volume (I've named mine mouseBraincase), change the Quality to **full resolution** and click **Load Files**
+
+<img src="ImageStacksROI.png">
+
+Notice that the slice views show only the volume in the region of interest and are now full resolution. 
+
+
 
 ### Further exploration
 
