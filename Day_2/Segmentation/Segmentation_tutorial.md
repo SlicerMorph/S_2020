@@ -75,11 +75,11 @@ As soon as you add the segment, the tools in the ``Segment Editor`` are enabled.
   
   * Go to Fill between slices effect and click "Initialize". This effect *interpolates* between the slices in the selected segment (in our case Tumor segment) and fills between them. The borders of the filled 3D shape does not follow the intensity of the image, in other words, it is not smart. It shows you a preview of the filled segment in a more transparent color which you can adjust using the slider between inputs and results. 
    
-   https://user-images.githubusercontent.com/3653088/109856249-21008280-7c0e-11eb-97ad-1559edba14d1.mp4
+   <img src="images/fillbetweenslices1.gif">
   
   * Until you click "Apply" button, you can modify the inputs (i.e. slices you painted) and if Auto-update checkbox is checked, the effect will update the filled region in the background. Lets keep painting slices. Notice how the proposed segmentation in more transparent green color updates each time you paint a new slice. Once you are finished, go back to Fill between slices and click apply which overwrites your segment (Tumor) with the proposed one.
   
-   https://user-images.githubusercontent.com/3653088/109856290-2bbb1780-7c0e-11eb-8043-c7aa64197e55.mp4
+   <img src="images/fillbetweenslices2.gif">
 
 
 
