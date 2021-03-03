@@ -145,7 +145,7 @@ During segmentation memory consumption may increase considerably (anywhere from 
 
 The simplest solution is to increase the virtual memory setting of the computer to very high value. This will make things work, but since virtual memory is slow compared to physical one, it will result in performance degradation.
 
-In case where you have an articulated specimen (e.g., a full fish skeleton), but you only want to segment cranial bones, then as oppose to using the full volume consider subsetting (or cropping) your volume. You can first use the `CropVolume` module (without interpolation) to extract the subset of the volume that contains the region you would like to segment. You can then segment the structures that you are interested using this cropped volume as the master volume. Using a cropped volume like this will reduce the memory burden of global operations such as threshold or island tools considerably. And because Slicer preserves the geometry of these individual segments, you can still overlay them correctly with the full volume if you need to. 
+In case where you have an articulated specimen (e.g., a full fish skeleton), but you only want to segment cranial bones, then as oppose to using the full volume consider subsetting (or cropping) your volume. You can first use the `CropVolume` module (without interpolation) to extract the subset of the volume that contains the region you would like to segment. You can then segment the structures that you are interested using this cropped volume as the master volume. Using a cropped volume like this will reduce the memory burden of global operations such as threshold or island tools considerably. And because Slicer preserves the geometry of these individual segments, you can still overlay them correctly with the full volume if you need to. Again, this can also be accomplished at the time of data import using `ImageStacks`. 
 
 If you have to use the entire volume (i.e., crop volume as described above is not option) you can also choose to modify the segmentation geometry (small red square in figure below). By default Slicer uses the image spacing of the master volume as the segmentation resolution. By using the geometry settings **Oversampling** option you can increase or decrease this segmentation resolution without actually modifying the original volume. Note that because this is an oversampling factors, higher numbers mean higher resolution (in contrast to CropVolume module). If you choose to use an oversampling of 0.5, you will reduce the data volume of your segmentation by a factor of 8. Likewise, if you choose oversampling as 2.00, you will increase the data volume of your segmentation by factor of 8. While it increases the memory consumption, oversampling will make segmenting thin structures (e.g., orbital walls, or flat bones) easier. It will also reduce the chance of these structures disappearing during smoothing or margin operations. However, be very careful using this on large datasets, since it will tremendously increase the memory consumption.   
 
@@ -245,13 +245,12 @@ Here's a video from the **SlicerMorph** team showing just how quick and easy it 
 If segmentation is your primary tasks, we suggest:
 * Getting a really good 3 button mouse.
 * Using a large (27" or larger), with 4K resolution. 
-* Learning the keyboard shortcuts (for example move slices up and down through f and b) for segment editor. 
-* You can program special keyboard shortcuts to each effect. Currently 1-10 are assigned to switch between first 10 effects. For SlicerMorph we find cycling through the effects clockwise (`` ` ``) and counter clockwise (`` ~ ``) fashion with repeated keystrokes to be a faster option. This is provided as part of the special [customization and startup script for SlicerMorph] (https://seattlechildrens1.app.box.com/file/551897685788). 
+* Learning the keyboard shortcuts (for example move slices up and down through via f and b keyboard strokes) for segment editor.  
+* For SlicerMorph, we find cycling through the effects clockwise (`` ` ``) and counter clockwise (`` ~ ``) fashion with repeated keystrokes to be a faster option. This is automatically enabled if you opt-in for the SLicerMOrph preferences. 
+* Alternatively you can [define your own custom keyboard shortcuts.](https://www.slicer.org/wiki/Documentation/Nightly/ScriptRepository#Customize_keyboard_shortcuts) 
 * Consider investing in a digitizer tablet. You can assign specific functions to your digitizer pen (e.g., erase effect to the back tip of the pen) as well as the buttons on the tablet itself. 
 
  
-
-
 
 ## I have a 3D model, can I edit/segment that in Slicer?
 Yes you can. Use SlicerMorph's `ImportSurfaceToSegment` module and point out to a STL/PLY/VTK/OBJ file. This will create a labelmap representation of the 3D model and a single segment, which you can edit in `Segment Editor`. 
