@@ -33,7 +33,7 @@ Once you have reversed your image and you want to visualize the full resolution 
 
 ### Using ROI with Image Stacks
 
-Let's say you have a large file and you only want to visualize a portion of the total scanned volume at full resolution, such as only segmenting the braincase of the mouse. Before loading in the full resolution volume, we can do that using a region of interest on the preview resolution image we imported in the previous step. First in the `Data` module click the eye ball button to view the **AnnotationROI** and use the colored circles so that the ROI includes only the mouse braincase. Now go to the `ImageStacks` modlue and select the **AnnotationROI** for the Region of interest and create a new output volume (I've named mine mouseBraincase), change the Quality to **full resolution** and click **Load Files**
+Let's say you have a large file and you only want to visualize a portion of the total scanned volume at full resolution, such as only segmenting the braincase of the mouse. Before loading in the full resolution volume, we can do that using a region of interest on the preview resolution image we imported in the previous step. First in the `Data` module click the eye ball button to view the **AnnotationROI** assoicated with your reversed image (Mine is called AnnotationROI_1) and use the colored circles so that the ROI excludes the mouse rostrum (nose). Now go to the `ImageStacks` modlue and select the same **AnnotationROI** for the Region of interest and create a new output volume (I've named mine mouseBraincase), change the Quality to **full resolution** and click **Load Files**
 
 
 <img src="ImageStacksROI.png">
