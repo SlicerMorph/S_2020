@@ -12,7 +12,7 @@ Then find the `ImageStacks` under SlicerMorph menu folder and:
 2. Image spacing in this dataset is provided in the accompanying left_side_damaged__rec.log file as 35.28 micron. Enter this value in millimeters as 0.03528 for all three axes
 3. You leave the **Output Volume** blank, which will use the filename prefix. Or you can choose to create a new volume name. 
 4. To preview a low resolution version of your file make sure the **preview** quality option is selected and click **Load Files** and see that all three slices viewers contain a low resolution version of our data.
-5. To visualize what the specimen looks like, go to `Data` module and drag and drop  **left_side_damaged__rec** into the 3D viewer. (Note: We will cover `Volume Rendering` module in great detail tomorrow. For the time being, this is all you need). 
+5. To visualize what the specimen looks like, go to `Data` module and drag and drop  **left_side_damaged__rec** into the 3D viewer. Alternatively, you can use the right-mouse click as shown in the screen capture. (Note: We will cover `Volume Rendering` module in great detail tomorrow. For the time being, this is all you need). 
 
 <img src="Data_Volume_Rendering.png">
 
