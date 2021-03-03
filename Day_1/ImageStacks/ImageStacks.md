@@ -3,7 +3,7 @@ This is a SlicerMorph specific utility to import non-DICOM image sequences (TIF/
 
 To use the `ImageStacks` module in SlicerMorph, first go to the `Sample Data` module and download the *Bruker/Skyscan mCT Recon Sample* data OR you can download the same file here: <a href="https://app.box.com/s/zvs162oja7tzszesmygnqs15t631y15m/file/701646040827" target="_blank"> Sample_microCT_stack.zip</A>, and unzip to a location. 
 
-Then find the `ImageStacks` under SlicerMorph menu folder and:
+Then find the `ImageStacks` under **SlicerMorph->Input and Output** menu folder and:
 
 1. Click the **Browse...** button and select a *PNG* file in the folder you just unzipped.
 
