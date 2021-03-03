@@ -67,6 +67,22 @@ As soon as you add the segment, the tools in the ``Segment Editor`` are enabled.
     <img src="images/Slide11.PNG">
     
     <img src="images/Slide12.PNG">
+    
+* **Fill Between Slices** is a useful effect you can use in combination with other effects that work on one slice at a time. If you found that Paint, Level tracing or Grow from seeds effects work on your segmentation task, you may want to use them to segment a 3D area of interest slice by slice but it may take a long time to do so. Don't despair! Fill Between Slices effect can cut down your work considerably. Instead of segmenting each slice, you only need to segment a couple and let this effect *Fill Between Slices*. 
+
+  * Start with any tool you like (Paint, Level tracing, Grow from seeds) and segment the tumor on two axial slices that are not adjacent but also not too far apart. 
+  <img src="images/fillbetweenslices2.png"> 
+  
+  * Go to Fill between slices effect and click "Initialize". This effect *interpolates* between the slices in the selected segment (in our case Tumor segment) and fills between them. The borders of the filled 3D shape does not follow the intensity of the image, in other words, it is not smart. It shows you a preview of the filled segment in a more transparent color which you can adjust using the slider between inputs and results. 
+   
+   https://user-images.githubusercontent.com/3653088/109856249-21008280-7c0e-11eb-97ad-1559edba14d1.mp4
+  
+  * Until you click "Apply" button, you can modify the inputs (i.e. slices you painted) and if Auto-update checkbox is checked, the effect will update the filled region in the background. Lets keep painting slices. Notice how the proposed segmentation in more transparent green color updates each time you paint a new slice. Once you are finished, go back to Fill between slices and click apply which overwrites your segment (Tumor) with the proposed one.
+  
+   https://user-images.githubusercontent.com/3653088/109856290-2bbb1780-7c0e-11eb-8043-c7aa64197e55.mp4
+
+
+
 
 * **Threshold** is one of my favorite tools to begin any segmentation. It creates segments based on an intensity range. In most modalities, the intensities of certain anatomical structures are known. It is also interactive, so you can play with the range until you found a working set. There are also automatic threshold methods that find the min/max values based on intensity histograms.
  
