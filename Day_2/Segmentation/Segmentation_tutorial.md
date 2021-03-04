@@ -81,14 +81,13 @@ As soon as you add the segment, the tools in the ``Segment Editor`` are enabled.
   
    <img src="images/fillbetweenslices2.gif">
 
-
-
-
 * **Threshold** is one of my favorite tools to begin any segmentation. It creates segments based on an intensity range. In most modalities, the intensities of certain anatomical structures are known. It is also interactive, so you can play with the range until you found a working set. There are also automatic threshold methods that find the min/max values based on intensity histograms.
  
  :pencil2: Click on Threshold and find a good range that works for the tumor in the image. Note how segmentation overlay on slices flashes while you change the range. It doesn't need to be perfect. Make sure "Show 3D" is turned off to speed things up. 
 
 <img src="images/Slide13.PNG">
+
+* **Local Threshold** adds more control to Threshold effect by allowing to select a region, visualizing the intensity histogram, using the histogram to pick the range of intensities for thresholding and adding "candidate" regions by Ctrl+clicking on the image. See [this thread](https://discourse.slicer.org/t/new-segment-editor-effect-local-threshold/9233) and [youtube video](https://youtu.be/cevlMLyhfK8) from Perk Labs introducing the effect.
 
 * **Islands**: Sometimes there are more than one structure in the same intensity range, if they are not "connected", it is easy to separate them. An island (connected component) is a group of pixels/voxels with the same label and that are "connected". Let's explore the options:
   * Keep largest island: removes all islands except the largest (defined as number of pixels/voxels) connected component. 
