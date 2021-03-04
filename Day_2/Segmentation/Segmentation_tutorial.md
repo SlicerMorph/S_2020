@@ -86,6 +86,13 @@ As soon as you add the segment, the tools in the ``Segment Editor`` are enabled.
  :pencil2: Click on Threshold and find a good range that works for the tumor in the image. Note how segmentation overlay on slices flashes while you change the range. It doesn't need to be perfect. Make sure "Show 3D" is turned off to speed things up. 
 
 <img src="images/Slide13.PNG">
+  
+  * Automatic threshold and Local histogram options let you make a more informed decision about the threshold range. Automatic threshold offers a couple algorithms for selecting minimum and maximum intensities for the region. Most algorithms find a cutoff point, and you can use it either as a minimum or a maximum for the threshold range by changing the option from the drop-down menu on the left.
+  <img src="images/autothreshold.png">
+ 
+  * Local histogram shows you the intensity histogram of a selected image region and lets you select an intensity range on the histogram. This is useful when you want to select intensities based on a region, instead of the whole image as automatic thresholding does. By constraining the region, you can make sure the area of interest will end up being a a larger peak compared to the whole image histogram. You can use a box, a circle, a line or a free-shaped region (draw) to select a region on slice views. For example, you can use Draw tool to select the tumor region. The histogram will have several peaks, but since the tumor looks brighter, we can assume that the peak on the higher intensity range corresponds to tumor. The automatic thresholding algorithm is now applied to this region and range is updated. Alternatively, you can select the intensity range directly on the histogram.
+  <img src="images/localhistogram.gif">
+
 
 * **Local Threshold** adds more control to Threshold effect by allowing to select a region, visualizing the intensity histogram, using the histogram to pick the range of intensities for thresholding and adding "candidate" regions by Ctrl+clicking on the image. See [this thread](https://discourse.slicer.org/t/new-segment-editor-effect-local-threshold/9233) and [youtube video](https://youtu.be/cevlMLyhfK8) from Perk Labs introducing the effect.
 
