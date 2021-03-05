@@ -19,6 +19,9 @@ Lectures, labs and all documents associated with Summer 2020 workshop.
 * [Using Landmarks to align models/volumes using Fiducial Registration module.](https://1drv.ms/p/s!AhiABcbe1DBygcAwmU7_GDzj4iGxWg)
 *	Flatting curved structures 
 *	Importing raw data
+*	Customizing Slicer via simple scripts
+   * [Setting your own background color in Volume Rendering](https://www.slicer.org/wiki/Documentation/Nightly/ScriptRepository#Change_3D_view_background_color)
+   * [Setting custom Volume Rendering Presets](https://www.slicer.org/wiki/Documentation/Nightly/ScriptRepository#Change_3D_view_background_color)
 
 
 
