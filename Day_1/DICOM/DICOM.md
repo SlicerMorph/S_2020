@@ -12,9 +12,3 @@ Because of these reasons, we actually suggest SlicerMorph users to use an extern
 We provide one small [sample DICOM](https://app.box.com/s/7jxziv9x6z34yee9ke8w0sincuw02zek) from The Cancer Imaging Archive. After you unzip the contents of it, you can import this sequence through the DICOMBrowser, by clicking on **Import DICOM files** and navigating to the folder **04-29-2011-ThoraxAThoraxRoutine Adult-66805**. To load the DICOM series into Slicer, click "Examine" and the "Load" button. 
 
 <img src="DICOM.png">
-
--------
-
-**NOTE:** There appears an incompatibility with DCM2NIIX importer and DICOMBrowser for the version of Slicer we are using. If you encounter a crash loading the DICOM, please disable the DCM2NIIX plugin for the DICOMBrowser. You can find the available DICOM plugins as shown in the figure. 
-
-<img src="Disable_dcm2niix_plugin.png" width="1024px">
